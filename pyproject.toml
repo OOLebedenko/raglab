@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "raglab"
+version = "0.1.0"
+description = "Modular RAG experimentation framework for retrieval, generation, and evaluation."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = []
+
+
+[project.optional-dependencies]
+dev = [
+    "mypy>=2,<3",
+    "pytest>=9,<10",
+    "ruff>=0.11,<1",
+]
+
+
+[tool.setuptools.packages.find]
+include = ["raglab*"]
+
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra -q"
+
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_unused_configs = true
+files = [
+    "raglab",
+    "tests",
+]
+
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+
+
+[tool.ruff.lint]
+select = [
+    "E", # pycodestyle errors
+    "F", # Pyflakes
+    "I", # import sorting
+    "B", # flake8-bugbear
+    "UP", # pyupgrade
+]
+
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
