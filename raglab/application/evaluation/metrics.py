@@ -1,4 +1,17 @@
+from collections.abc import Callable
+from dataclasses import dataclass
+
 from raglab.application.models import QueryRelevanceIndex
+
+MetricFunction = Callable[[QueryRelevanceIndex], float]
+
+
+@dataclass(frozen=True)
+class Metric:
+    """Represent a named evaluation metric."""
+
+    name: str
+    calculate: MetricFunction
 
 
 def recall_at_k(
