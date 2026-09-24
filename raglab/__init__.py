@@ -1,1 +1,1 @@
-"""RAG experimentation framework."""
+"""Data models and loaders"""
