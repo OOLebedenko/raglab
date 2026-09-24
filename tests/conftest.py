@@ -1,6 +1,6 @@
 import pytest
 
-from raglab.application.models import RetrievedChunk, SupportingFact
+from raglab.application.models import EvaluationSample, RetrievedChunk, SupportingFact
 
 
 @pytest.fixture
@@ -51,3 +51,33 @@ def relevance_matches() -> frozenset[tuple[int, int]]:
             (1, 2),
         }
     )
+
+
+@pytest.fixture
+def evaluation_samples() -> list[EvaluationSample]:
+    """Return benchmark samples for evaluation tests."""
+
+    return [
+        EvaluationSample(
+            query="First query",
+            supporting_facts=[
+                SupportingFact(
+                    text="First fact.",
+                    source="document.txt",
+                ),
+            ],
+        ),
+        EvaluationSample(
+            query="Second query",
+            supporting_facts=[
+                SupportingFact(
+                    text="First fact.",
+                    source="document.txt",
+                ),
+                SupportingFact(
+                    text="Second fact.",
+                    source="document.txt",
+                ),
+            ],
+        ),
+    ]
