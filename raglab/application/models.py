@@ -8,7 +8,7 @@ class RetrievedChunk:
 
     text: str
     source: str
-    score: float
+    score: float | None = None
     metadata: dict[str, Any] = field(default_factory=dict)
 
 
