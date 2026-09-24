@@ -13,6 +13,30 @@ class RetrievedChunk:
 
 
 @dataclass(frozen=True)
+class SupportingFact:
+    """Represent a gold supporting fact for evaluation."""
+
+    text: str
+    source: str
+
+
+@dataclass(frozen=True)
+class EvaluationSample:
+    """Represent a benchmark sample."""
+
+    query: str
+    supporting_facts: list[SupportingFact]
+
+
+@dataclass(frozen=True)
+class QueryRelevanceIndex:
+    """Represent relevance matches for one query."""
+
+    matches: frozenset[tuple[int, int]]
+    gold_count: int
+
+
+@dataclass(frozen=True)
 class RagResult:
     """Represent the result of a RAG query."""
 
