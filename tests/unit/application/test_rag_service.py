@@ -1,5 +1,3 @@
-import pytest
-
 from raglab.application.models import RetrievedChunk
 from raglab.application.rag_service import RagService
 
@@ -37,32 +35,14 @@ class FakeGenerator:
         return self._answer
 
 
-@pytest.fixture
-def chunks() -> list[RetrievedChunk]:
-    """Return retrieved chunks for tests."""
-
-    return [
-        RetrievedChunk(
-            text="Relevant document content.",
-            source="document.txt",
-            score=0.91,
-        ),
-        RetrievedChunk(
-            text="Another relevant passage.",
-            source="another_document.txt",
-            score=0.84,
-        ),
-    ]
-
-
 def test_ask_returns_rag_result(
-    chunks: list[RetrievedChunk],
+    retrieved_chunks: list[RetrievedChunk],
 ) -> None:
     query = "Example query"
     answer = "Generated answer."
 
     service = RagService(
-        retriever=FakeRetriever(chunks),
+        retriever=FakeRetriever(retrieved_chunks),
         generator=FakeGenerator(answer),
     )
 
@@ -70,4 +50,4 @@ def test_ask_returns_rag_result(
 
     assert result.query == query
     assert result.answer == answer
-    assert result.retrieved_chunks == chunks
+    assert result.retrieved_chunks == retrieved_chunks
