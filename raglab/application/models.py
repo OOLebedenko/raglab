@@ -29,6 +29,14 @@ class EvaluationSample:
 
 
 @dataclass(frozen=True)
+class QueryRelevanceIndex:
+    """Represent relevance matches for one query."""
+
+    matches: frozenset[tuple[int, int]]
+    gold_count: int
+
+
+@dataclass(frozen=True)
 class RagResult:
     """Represent the result of a RAG query."""
 
