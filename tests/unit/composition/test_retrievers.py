@@ -1,15 +1,21 @@
 from pathlib import Path
 from unittest.mock import Mock, patch
 
+import pytest
+from langchain_core.documents import Document
 from langchain_core.retrievers import BaseRetriever
 
 from raglab.composition.config import (
     EmbeddingConfig,
+    LexicalRetrieverConfig,
     LocalVectorStoreConfig,
     RetrievalPolicyConfig,
     VectorRetrieverConfig,
 )
-from raglab.composition.retrievers import build_vector_retriever
+from raglab.composition.retrievers import (
+    build_lexical_retriever,
+    build_vector_retriever,
+)
 
 
 def test_build_vector_retriever(tmp_path: Path) -> None:
@@ -48,3 +54,37 @@ def test_build_vector_retriever(tmp_path: Path) -> None:
     )
 
     assert result is retriever
+
+
+def test_build_lexical_retriever() -> None:
+    config = LexicalRetrieverConfig(
+        type="lexical",
+        implementation="bm25",
+        policy=RetrievalPolicyConfig(top_k=7),
+    )
+    documents = [
+        Document(page_content="First chunk", metadata={"source": "a.md"}),
+        Document(page_content="Second chunk", metadata={"source": "b.md"}),
+    ]
+
+    with patch(
+        "raglab.composition.retrievers.BM25Retriever.from_documents"
+    ) as mock_factory:
+        result = build_lexical_retriever(config, documents)
+
+    mock_factory.assert_called_once_with(documents, k=7)
+    assert result is mock_factory.return_value
+
+
+def test_build_lexical_retriever_rejects_unknown_implementation() -> None:
+    config = LexicalRetrieverConfig(
+        type="lexical",
+        implementation="unknown",
+        policy=RetrievalPolicyConfig(top_k=5),
+    )
+
+    with pytest.raises(ValueError, match="Unsupported lexical retriever"):
+        build_lexical_retriever(
+            config,
+            [Document(page_content="Example")],
+        )

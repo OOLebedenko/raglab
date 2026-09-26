@@ -16,6 +16,7 @@ dependencies = [
     "langchain-gigachat>=0.5.1,<0.6",
     "pydantic>=2,<3",
     "PyYAML>=6,<7",
+    "rank-bm25>=0.2.2,<1",
 ]
 
 
@@ -56,6 +57,9 @@ module = [
 ]
 follow_imports = "skip"
 
+[[tool.mypy.overrides]]
+module = ["rank_bm25"]
+ignore_missing_imports = true
 
 [tool.ruff]
 target-version = "py312"
