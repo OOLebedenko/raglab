@@ -33,8 +33,10 @@ def config_data() -> dict[str, Any]:
             },
             "vector_store": {
                 "type": "chroma",
-                "collection_name": "raglab",
-                "persist_directory": "data/chroma",
+                "path": "data/chroma",
+                "options": {
+                    "collection_name": "raglab",
+                },
             },
         },
         "generator": {
@@ -97,7 +99,7 @@ def test_load_config_resolves_relative_paths(
     assert config.data.benchmark == tmp_path / "data/benchmark.json"
 
     assert isinstance(config.retriever, VectorRetrieverConfig)
-    assert config.retriever.vector_store.persist_directory == (tmp_path / "data/chroma")
+    assert config.retriever.vector_store.path == tmp_path / "data/chroma"
 
 
 def test_load_lexical_config(

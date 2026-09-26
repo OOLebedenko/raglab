@@ -31,15 +31,11 @@ def _resolve_retriever_paths(
         return retriever
 
     vector_store = retriever.vector_store
-    persist_directory = vector_store.persist_directory
-
-    if persist_directory is None:
-        return retriever
 
     resolved_store = vector_store.model_copy(
         update={
-            "persist_directory": resolve_path(
-                persist_directory,
+            "path": resolve_path(
+                vector_store.path,
                 project_root,
             ),
         }

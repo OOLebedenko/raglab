@@ -18,9 +18,9 @@ from raglab.composition.config.loader import (
 from raglab.composition.config.retrieval import (
     EmbeddingConfig,
     LexicalRetrieverConfig,
+    LocalVectorStoreConfig,
     RetrievalPolicyConfig,
     VectorRetrieverConfig,
-    VectorStoreConfig,
 )
 from raglab.composition.config.schema import (
     DataConfig,
@@ -51,7 +51,7 @@ __all__ = [
     "RetrieverConfig",
     "SubstringJudgeConfig",
     "VectorRetrieverConfig",
-    "VectorStoreConfig",
+    "LocalVectorStoreConfig",
     "load_config",
     "resolve_path",
 ]

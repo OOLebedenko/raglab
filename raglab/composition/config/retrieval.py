@@ -1,7 +1,7 @@
 from pathlib import Path
-from typing import Literal
+from typing import Any, Literal
 
-from pydantic import PositiveInt
+from pydantic import Field, PositiveInt
 
 from raglab.composition.config.base import ConfigModel
 
@@ -19,12 +19,19 @@ class EmbeddingConfig(ConfigModel):
     model_name: str
 
 
-class VectorStoreConfig(ConfigModel):
-    """Configure a vector store implementation."""
+class LocalVectorStoreConfig(ConfigModel):
+    """Configure an existing vector store.
+
+    The path points to a prepared index. Its interpretation
+    depends on the vector store implementation.
+
+    Options contain non-sensitive implementation-specific parameters.
+    Secrets must be provided separately through environment settings.
+    """
 
     type: str
-    collection_name: str | None = None
-    persist_directory: Path | None = None
+    path: Path
+    options: dict[str, Any] = Field(default_factory=dict)
 
 
 class VectorRetrieverConfig(ConfigModel):
@@ -33,7 +40,7 @@ class VectorRetrieverConfig(ConfigModel):
     type: Literal["vector"]
     policy: RetrievalPolicyConfig
     embedding: EmbeddingConfig
-    vector_store: VectorStoreConfig
+    vector_store: LocalVectorStoreConfig
 
 
 class LexicalRetrieverConfig(ConfigModel):
