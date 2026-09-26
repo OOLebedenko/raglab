@@ -50,12 +50,9 @@ files = [
 # Skip analyzing its internals; the RAGLab integration is covered by adapter tests.
 [[tool.mypy.overrides]]
 module = [
-    "langchain_core",
     "langchain_core.*",
     "langchain_huggingface",
-    "langchain_huggingface.*",
     "langchain_chroma",
-    "langchain_chroma.*",
 ]
 follow_imports = "skip"
 
