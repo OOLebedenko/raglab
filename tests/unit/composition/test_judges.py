@@ -1,5 +1,5 @@
 from typing import cast
-from unittest.mock import Mock
+from unittest.mock import Mock, patch
 
 import pytest
 from langchain_core.language_models import BaseChatModel
@@ -48,20 +48,29 @@ def test_build_llm_judge(
     llm_judge_config: LlmJudgeConfig,
     fake_chat_model: BaseChatModel,
 ) -> None:
-    """Build an LLM judge with the provided model."""
+    """Use a provided model without creating another one"""
 
-    judge = build_judge(llm_judge_config, model=fake_chat_model)
+    with patch("raglab.composition.judges.build_chat_model") as mock_build_model:
+        judge = build_judge(llm_judge_config, model=fake_chat_model)
 
     assert isinstance(judge, LangChainRelevanceJudge)
+    mock_build_model.assert_not_called()
 
 
-def test_build_llm_judge_requires_model(
+def test_build_llm_judge_from_config(
     llm_judge_config: LlmJudgeConfig,
+    fake_chat_model: BaseChatModel,
 ) -> None:
-    """Reject an LLM judge without a chat model."""
+    """Build the judge model from its configuration"""
 
-    with pytest.raises(ValueError, match="requires a chat model"):
-        build_judge(llm_judge_config)
+    with patch(
+        "raglab.composition.judges.build_chat_model",
+        return_value=fake_chat_model,
+    ) as mock_build_model:
+        judge = build_judge(llm_judge_config)
+
+    mock_build_model.assert_called_once_with(llm_judge_config.model)
+    assert isinstance(judge, LangChainRelevanceJudge)
 
 
 def test_build_llm_judge_rejects_unknown_prompt(

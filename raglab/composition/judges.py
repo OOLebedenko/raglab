@@ -2,6 +2,7 @@ from typing import assert_never
 
 from langchain_core.language_models import BaseChatModel
 
+from raglab.composition.chat_models import build_chat_model
 from raglab.composition.config import (
     JudgeConfig,
     LlmJudgeConfig,
@@ -12,35 +13,29 @@ from raglab.infrastructure.relevance.prompt import DEFAULT_RELEVANCE_PROMPT
 from raglab.infrastructure.relevance.substring import SubstringRelevanceJudge
 
 
-def _validate_llm_judge(
-    config: LlmJudgeConfig,
-    model: BaseChatModel | None,
-) -> BaseChatModel:
-    """Validate LLM judge dependencies."""
-
-    if model is None:
-        raise ValueError("LLM judge requires a chat model")
+def _validate_llm_judge_prompt(config: LlmJudgeConfig) -> None:
+    """Validate LLM judge configuration."""
 
     if config.prompt != "default_relevance":
         raise ValueError(f"Unknown relevance prompt: {config.prompt}")
-
-    return model
 
 
 def _build_judge(
     config: JudgeConfig,
     model: BaseChatModel | None,
 ) -> SubstringRelevanceJudge | LangChainRelevanceJudge:
-    """Build a judge for the selected configuration."""
+    """Build the selected relevance judge."""
 
     if isinstance(config, SubstringJudgeConfig):
         return SubstringRelevanceJudge()
 
     if isinstance(config, LlmJudgeConfig):
-        validated_model = _validate_llm_judge(config, model)
+        _validate_llm_judge_prompt(config)
+
+        chat_model = model if model is not None else build_chat_model(config.model)
 
         return LangChainRelevanceJudge(
-            model=validated_model,
+            model=chat_model,
             prompt=DEFAULT_RELEVANCE_PROMPT,
         )
 
