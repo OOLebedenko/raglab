@@ -11,6 +11,7 @@ readme = "README.md"
 requires-python = ">=3.12,<3.13"
 dependencies = [
     "langchain-core>=1,<2",
+    "langchain-huggingface>=1,<2",
     "langchain-gigachat>=0.5.1,<0.6",
     "pydantic>=2,<3",
     "PyYAML>=6,<7",
@@ -47,7 +48,12 @@ files = [
 # LangChain has a large type dependency graph that makes mypy very slow.
 # Skip analyzing its internals; the RAGLab integration is covered by adapter tests.
 [[tool.mypy.overrides]]
-module = ["langchain_core.*"]
+module = [
+    "langchain_core",
+    "langchain_core.*",
+    "langchain_huggingface",
+    "langchain_huggingface.*",
+]
 follow_imports = "skip"
 
 
