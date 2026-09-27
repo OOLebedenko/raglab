@@ -1,4 +1,4 @@
-from raglab.application.models import QueryRelevanceIndex
+from raglab.application.models import QueryRelevance
 from raglab.composition.config import (
     RecallAtKConfig,
     ReciprocalRankConfig,
@@ -17,7 +17,7 @@ def test_build_metrics() -> None:
     metrics = build_metrics(configs)
 
     # Two gold facts are found at ranks 1 and 3.
-    index = QueryRelevanceIndex(
+    index = QueryRelevance(
         matches=frozenset({(0, 0), (2, 1)}),
         gold_count=2,
     )
@@ -40,7 +40,7 @@ def test_build_metrics_binds_recall_cutoffs() -> None:
     metrics = build_metrics(configs)
 
     # The only gold fact is found at rank 3.
-    index = QueryRelevanceIndex(
+    index = QueryRelevance(
         matches=frozenset({(2, 0)}),
         gold_count=1,
     )

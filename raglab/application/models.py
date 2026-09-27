@@ -29,7 +29,7 @@ class EvaluationSample:
 
 
 @dataclass(frozen=True)
-class QueryRelevanceIndex:
+class QueryRelevance:
     """Represent relevance matches for one query."""
 
     matches: frozenset[tuple[int, int]]

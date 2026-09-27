@@ -1,5 +1,5 @@
 from raglab.application.models import (
-    QueryRelevanceIndex,
+    QueryRelevance,
     RetrievedChunk,
     SupportingFact,
 )
@@ -10,10 +10,10 @@ def build_index(
     retrieved: list[RetrievedChunk],
     gold: list[SupportingFact],
     judge: RelevanceJudge,
-) -> QueryRelevanceIndex:
+) -> QueryRelevance:
     """Build relevance index for one query."""
 
-    return QueryRelevanceIndex(
+    return QueryRelevance(
         matches=judge.find_matches(
             retrieved=retrieved,
             gold=gold,

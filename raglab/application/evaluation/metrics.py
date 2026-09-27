@@ -1,9 +1,9 @@
 from collections.abc import Callable
 from dataclasses import dataclass
 
-from raglab.application.models import QueryRelevanceIndex
+from raglab.application.models import QueryRelevance
 
-MetricFunction = Callable[[QueryRelevanceIndex], float]
+MetricFunction = Callable[[QueryRelevance], float]
 
 
 @dataclass(frozen=True)
@@ -15,7 +15,7 @@ class Metric:
 
 
 def recall_at_k(
-    index: QueryRelevanceIndex,
+    index: QueryRelevance,
     k: int,
 ) -> float:
     """Calculate recall among the top-k retrieved chunks."""
@@ -31,7 +31,7 @@ def recall_at_k(
 
 
 def reciprocal_rank(
-    index: QueryRelevanceIndex,
+    index: QueryRelevance,
 ) -> float:
     """Calculate reciprocal rank for one query."""
 

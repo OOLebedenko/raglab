@@ -5,7 +5,7 @@ import pytest
 import yaml
 from langchain_core.documents import Document
 
-from raglab.application.models import QueryRelevanceIndex, SupportingFact
+from raglab.application.models import QueryRelevance, SupportingFact
 from raglab.composition.config import load_config
 from raglab.composition.indexes import build_index
 from raglab.composition.judges import build_judge
@@ -163,7 +163,7 @@ def test_retrieval_evaluation_pipeline(config_path: Path) -> None:
     judge = build_judge(config.evaluation.judge)
     matches = judge.find_matches(retrieved, gold)
 
-    relevance_index = QueryRelevanceIndex(
+    relevance_index = QueryRelevance(
         matches=matches,
         gold_count=len(gold),
     )

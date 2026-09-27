@@ -5,13 +5,13 @@ from raglab.application.evaluation.metrics import (
     recall_at_k,
     reciprocal_rank,
 )
-from raglab.application.models import QueryRelevanceIndex
+from raglab.application.models import QueryRelevance
 
 
 def test_recall_at_k() -> None:
     # chunk 0 matches fact 0, chunk 2 matches fact 1;
     # there are 3 gold facts in total.
-    query_index = QueryRelevanceIndex(
+    query_index = QueryRelevance(
         matches=frozenset(
             {
                 (0, 0),
@@ -28,7 +28,7 @@ def test_recall_at_k() -> None:
 
 def test_reciprocal_rank() -> None:
     # The first relevant chunk is at zero-based index 2, i.e. rank 3.
-    query_index = QueryRelevanceIndex(
+    query_index = QueryRelevance(
         matches=frozenset(
             {
                 (2, 0),
