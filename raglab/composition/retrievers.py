@@ -1,7 +1,8 @@
 from collections.abc import Callable
 from pathlib import Path
-from typing import assert_never
+from typing import Any, assert_never
 
+from langchain_core.embeddings import Embeddings
 from langchain_core.retrievers import BaseRetriever
 
 from raglab.application.ports.retriever import Retriever
@@ -13,18 +14,40 @@ from raglab.composition.config import (
     VectorRetrieverConfig,
 )
 from raglab.composition.embeddings import build_embeddings
-from raglab.composition.vector_stores import build_vector_store
+from raglab.infrastructure.indexes.bm25 import load_bm25_index
+from raglab.infrastructure.indexes.chroma import load_chroma
 from raglab.infrastructure.retrieval.adapter import LangChainRetrieverAdapter
 from raglab.infrastructure.retrieval.lexical import BM25Retriever
+
+
+def _build_bm25_retriever(path: Path, k: int) -> BaseRetriever:
+    """Build a retriever from an existing BM25S index."""
+
+    index, tokenizer = load_bm25_index(path)
+
+    return BM25Retriever(
+        index=index,
+        tokenizer=tokenizer,
+        k=k,
+    )
+
 
 _LEXICAL_BUILDERS: dict[
     str,
     Callable[[Path, int], BaseRetriever],
 ] = {
-    "bm25s": lambda path, k: BM25Retriever.from_index(
+    "bm25s": _build_bm25_retriever,
+}
+
+_VECTOR_BUILDERS: dict[
+    str,
+    Callable[[Path, Embeddings, dict[str, Any], int], BaseRetriever],
+] = {
+    "chroma": lambda path, embeddings, options, k: load_chroma(
         path,
-        k=k,
-    ),
+        embeddings,
+        options,
+    ).as_retriever(search_kwargs={"k": k}),
 }
 
 
@@ -37,11 +60,18 @@ def build_vector_retriever(
     if not isinstance(config.index, LocalIndexConfig):
         raise NotImplementedError("Remote indexes are not implemented")
 
-    embeddings = build_embeddings(config.embedding)
-    vector_store = build_vector_store(config.index, embeddings)
+    try:
+        builder = _VECTOR_BUILDERS[config.index.type]
+    except KeyError as exc:
+        raise ValueError(f"Unsupported vector retriever: {config.index.type}") from exc
 
-    return vector_store.as_retriever(
-        search_kwargs={"k": policy.top_k},
+    embeddings = build_embeddings(config.embedding)
+
+    return builder(
+        config.index.path,
+        embeddings,
+        config.index.options,
+        policy.top_k,
     )
 
 

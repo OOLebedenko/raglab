@@ -3,10 +3,11 @@ from pathlib import Path
 import pytest
 from langchain_core.documents import Document
 
-from raglab.infrastructure.retrieval.lexical import (
-    BM25Retriever,
+from raglab.infrastructure.indexes.bm25 import (
     build_bm25_index,
+    load_bm25_index,
 )
+from raglab.infrastructure.retrieval.lexical import BM25Retriever
 
 
 @pytest.mark.parametrize(
@@ -36,14 +37,15 @@ def test_bm25_save_load_and_retrieve(
         ),
     ]
 
-    # Build and save the index.
+    # Build and save the index
     index_path = tmp_path / "bm25"
     build_bm25_index(documents, index_path)
 
-    # Load the saved index in a new retriever.
-    retriever = BM25Retriever.from_index(index_path, k=k)
+    # Load the saved index into a new retriever
+    index, tokenizer = load_bm25_index(index_path)
+    retriever = BM25Retriever(index=index, tokenizer=tokenizer, k=k)
 
-    # Search and verify the returned documents and metadata.
+    # Search and verify the returned documents and metadata
     results = retriever.invoke("quantum resonance")
 
     assert results[0] == documents[0]
@@ -79,11 +81,11 @@ def test_build_bm25_index_rejects_existing_path(
         build_bm25_index(documents, index_path)
 
 
-def test_bm25_from_index_requires_existing_directory(
+def test_load_bm25_index_requires_existing_directory(
     tmp_path: Path,
 ) -> None:
     with pytest.raises(
         FileNotFoundError,
         match="BM25S index directory not found",
     ):
-        BM25Retriever.from_index(tmp_path / "missing")
+        load_bm25_index(tmp_path / "missing")

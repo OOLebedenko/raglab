@@ -33,24 +33,26 @@ def test_build_vector_retriever(tmp_path: Path) -> None:
     )
     policy = RetrievalPolicyConfig(top_k=7)
 
+    retriever = Mock(spec=BaseRetriever)
+    mock_builder = Mock(return_value=retriever)
+
     with (
         patch("raglab.composition.retrievers.build_embeddings") as mock_embeddings,
-        patch("raglab.composition.retrievers.build_vector_store") as mock_store,
+        patch(
+            "raglab.composition.retrievers._VECTOR_BUILDERS",
+            {"chroma": mock_builder},
+        ),
     ):
-        retriever = Mock(spec=BaseRetriever)
-        mock_store.return_value.as_retriever.return_value = retriever
-
         result = build_vector_retriever(config, policy)
 
     mock_embeddings.assert_called_once_with(config.embedding)
+    assert isinstance(config.index, LocalIndexConfig)
 
-    mock_store.assert_called_once_with(
-        config.index,
+    mock_builder.assert_called_once_with(
+        config.index.path,
         mock_embeddings.return_value,
-    )
-
-    mock_store.return_value.as_retriever.assert_called_once_with(
-        search_kwargs={"k": 7},
+        config.index.options,
+        7,
     )
 
     assert result is retriever
@@ -67,12 +69,15 @@ def test_build_lexical_retriever(tmp_path: Path) -> None:
     )
     policy = RetrievalPolicyConfig(top_k=7)
 
+    mock_factory = Mock()
+
     with patch(
-        "raglab.composition.retrievers.BM25Retriever.from_index"
-    ) as mock_factory:
+        "raglab.composition.retrievers._LEXICAL_BUILDERS",
+        {"bm25s": mock_factory},
+    ):
         result = build_lexical_retriever(config, policy)
 
-    mock_factory.assert_called_once_with(tmp_path, k=7)
+    mock_factory.assert_called_once_with(tmp_path, 7)
     assert result is mock_factory.return_value
 
 
