@@ -20,7 +20,6 @@ from raglab.composition.retrievers import (
 def test_build_vector_retriever(tmp_path: Path) -> None:
     config = VectorRetrieverConfig(
         type="vector",
-        policy=RetrievalPolicyConfig(top_k=7),
         embedding=EmbeddingConfig(
             type="huggingface",
             model_name="test-model",
@@ -32,6 +31,7 @@ def test_build_vector_retriever(tmp_path: Path) -> None:
             options={"collection_name": "test_collection"},
         ),
     )
+    policy = RetrievalPolicyConfig(top_k=7)
 
     with (
         patch("raglab.composition.retrievers.build_embeddings") as mock_embeddings,
@@ -40,7 +40,7 @@ def test_build_vector_retriever(tmp_path: Path) -> None:
         retriever = Mock(spec=BaseRetriever)
         mock_store.return_value.as_retriever.return_value = retriever
 
-        result = build_vector_retriever(config)
+        result = build_vector_retriever(config, policy)
 
     mock_embeddings.assert_called_once_with(config.embedding)
 
@@ -59,18 +59,18 @@ def test_build_vector_retriever(tmp_path: Path) -> None:
 def test_build_lexical_retriever(tmp_path: Path) -> None:
     config = LexicalRetrieverConfig(
         type="lexical",
-        policy=RetrievalPolicyConfig(top_k=7),
         index=LocalIndexConfig(
             type="bm25s",
             location="local",
             path=tmp_path,
         ),
     )
+    policy = RetrievalPolicyConfig(top_k=7)
 
     with patch(
         "raglab.composition.retrievers.BM25Retriever.from_index"
     ) as mock_factory:
-        result = build_lexical_retriever(config)
+        result = build_lexical_retriever(config, policy)
 
     mock_factory.assert_called_once_with(tmp_path, k=7)
     assert result is mock_factory.return_value
@@ -81,13 +81,13 @@ def test_build_lexical_retriever_rejects_unknown_implementation(
 ) -> None:
     config = LexicalRetrieverConfig(
         type="lexical",
-        policy=RetrievalPolicyConfig(top_k=5),
         index=LocalIndexConfig(
             type="unknown",
             location="local",
             path=tmp_path,
         ),
     )
+    policy = RetrievalPolicyConfig(top_k=5)
 
     with pytest.raises(ValueError, match="Unsupported lexical retriever"):
-        build_lexical_retriever(config)
+        build_lexical_retriever(config, policy)

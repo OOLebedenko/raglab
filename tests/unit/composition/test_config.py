@@ -25,9 +25,6 @@ def config_data() -> dict[str, Any]:
         },
         "retriever": {
             "type": "vector",
-            "policy": {
-                "top_k": 10,
-            },
             "embedding": {
                 "type": "huggingface",
                 "model_name": "BAAI/bge-m3",
@@ -40,6 +37,9 @@ def config_data() -> dict[str, Any]:
                     "collection_name": "raglab",
                 },
             },
+        },
+        "retrieval_policy": {
+            "top_k": 10,
         },
         "generator": {
             "model": {
@@ -70,9 +70,6 @@ def lexical_retriever_data() -> dict[str, Any]:
 
     return {
         "type": "lexical",
-        "policy": {
-            "top_k": 5,
-        },
         "index": {
             "type": "bm25s",
             "location": "local",
@@ -117,6 +114,7 @@ def test_load_lexical_config(
     """Load a lexical retriever without vector settings."""
 
     config_data["retriever"] = lexical_retriever_data
+    config_data["retrieval_policy"] = {"top_k": 5}
 
     config_path = tmp_path / "experiment.yaml"
     config_path.write_text(
@@ -133,7 +131,7 @@ def test_load_lexical_config(
     assert isinstance(config.retriever.index, LocalIndexConfig)
     assert config.retriever.index.type == "bm25s"
     assert config.retriever.index.path == tmp_path / "data/bm25"
-    assert config.retriever.policy.top_k == 5
+    assert config.retrieval_policy.top_k == 5
     assert config.data.chunks == tmp_path / "data/chunks.json"
 
 

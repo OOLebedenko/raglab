@@ -8,6 +8,7 @@ from raglab.application.ports.retriever import Retriever
 from raglab.composition.config import (
     LexicalRetrieverConfig,
     LocalIndexConfig,
+    RetrievalPolicyConfig,
     RetrieverConfig,
     VectorRetrieverConfig,
 )
@@ -29,6 +30,7 @@ _LEXICAL_BUILDERS: dict[
 
 def build_vector_retriever(
     config: VectorRetrieverConfig,
+    policy: RetrievalPolicyConfig,
 ) -> BaseRetriever:
     """Build a vector retriever from configuration."""
 
@@ -39,12 +41,13 @@ def build_vector_retriever(
     vector_store = build_vector_store(config.index, embeddings)
 
     return vector_store.as_retriever(
-        search_kwargs={"k": config.policy.top_k},
+        search_kwargs={"k": policy.top_k},
     )
 
 
 def build_lexical_retriever(
     config: LexicalRetrieverConfig,
+    policy: RetrievalPolicyConfig,
 ) -> BaseRetriever:
     """Build a lexical retriever from configuration."""
 
@@ -56,19 +59,20 @@ def build_lexical_retriever(
     except KeyError as exc:
         raise ValueError(f"Unsupported lexical retriever: {config.index.type}") from exc
 
-    return builder(config.index.path, config.policy.top_k)
+    return builder(config.index.path, policy.top_k)
 
 
 def build_retriever(
     config: RetrieverConfig,
+    policy: RetrievalPolicyConfig,
 ) -> Retriever:
     """Build and adapt a retriever from configuration."""
 
     if isinstance(config, VectorRetrieverConfig):
-        retriever = build_vector_retriever(config)
+        retriever = build_vector_retriever(config, policy)
 
     elif isinstance(config, LexicalRetrieverConfig):
-        retriever = build_lexical_retriever(config)
+        retriever = build_lexical_retriever(config, policy)
 
     else:
         assert_never(config)

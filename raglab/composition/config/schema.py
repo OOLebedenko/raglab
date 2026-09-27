@@ -13,6 +13,7 @@ from raglab.composition.config.evaluation import (
 from raglab.composition.config.generation import GeneratorConfig
 from raglab.composition.config.retrieval import (
     LexicalRetrieverConfig,
+    RetrievalPolicyConfig,
     VectorRetrieverConfig,
 )
 
@@ -51,6 +52,7 @@ class ExperimentConfig(ConfigModel):
 
     data: DataConfig
     retriever: RetrieverConfig
+    retrieval_policy: RetrievalPolicyConfig
     evaluation: EvaluationConfig
     generator: GeneratorConfig | None = None
 
@@ -59,4 +61,5 @@ class ProductionConfig(ConfigModel):
     """Configure a RAG pipeline for serving queries."""
 
     retriever: RetrieverConfig
+    retrieval_policy: RetrievalPolicyConfig
     generator: GeneratorConfig

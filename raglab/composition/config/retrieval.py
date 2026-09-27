@@ -58,7 +58,6 @@ class VectorRetrieverConfig(ConfigModel):
     """Configure vector retrieval."""
 
     type: Literal["vector"]
-    policy: RetrievalPolicyConfig
     embedding: EmbeddingConfig
     index: IndexConfigVariant
 
@@ -67,5 +66,4 @@ class LexicalRetrieverConfig(ConfigModel):
     """Configure lexical retrieval."""
 
     type: Literal["lexical"]
-    policy: RetrievalPolicyConfig
     index: IndexConfigVariant
