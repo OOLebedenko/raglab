@@ -5,7 +5,7 @@ from unittest.mock import Mock
 import pytest
 from langchain_core.embeddings import Embeddings
 
-from raglab.composition.config import LocalVectorStoreConfig
+from raglab.composition.config import LocalIndexConfig
 from raglab.composition.vector_stores import build_vector_store
 
 
@@ -22,8 +22,9 @@ def test_build_chroma_store_requires_existing_directory(
 ) -> None:
     """Reject a missing index directory."""
 
-    config = LocalVectorStoreConfig(
+    config = LocalIndexConfig(
         type="chroma",
+        location="local",
         path=tmp_path / "missing",
         options={"collection_name": "test_collection"},
     )
@@ -38,8 +39,9 @@ def test_build_chroma_store_requires_collection_name(
 ) -> None:
     """Reject Chroma configuration without a collection name."""
 
-    config = LocalVectorStoreConfig(
+    config = LocalIndexConfig(
         type="chroma",
+        location="local",
         path=tmp_path,
     )
 
@@ -53,8 +55,9 @@ def test_build_vector_store_rejects_unknown_type(
 ) -> None:
     """Reject an unsupported vector store implementation."""
 
-    config = LocalVectorStoreConfig(
+    config = LocalIndexConfig(
         type="unknown",
+        location="local",
         path=tmp_path,
     )
 

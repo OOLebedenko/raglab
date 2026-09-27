@@ -2,9 +2,10 @@ from pathlib import Path
 
 import yaml
 
-from raglab.composition.config.retrieval import VectorRetrieverConfig
+from raglab.composition.config.retrieval import LocalIndexConfig
 from raglab.composition.config.schema import (
     ExperimentConfig,
+    ProductionConfig,
     RetrieverConfig,
 )
 
@@ -25,23 +26,20 @@ def _resolve_retriever_paths(
     retriever: RetrieverConfig,
     project_root: Path,
 ) -> RetrieverConfig:
-    """Resolve paths inside a retriever configuration."""
+    """Resolve the path of a local search index."""
 
-    if not isinstance(retriever, VectorRetrieverConfig):
+    index = retriever.index
+
+    if not isinstance(index, LocalIndexConfig):
         return retriever
 
-    vector_store = retriever.vector_store
-
-    resolved_store = vector_store.model_copy(
+    resolved_index = index.model_copy(
         update={
-            "path": resolve_path(
-                vector_store.path,
-                project_root,
-            ),
+            "path": resolve_path(index.path, project_root),
         }
     )
 
-    return retriever.model_copy(update={"vector_store": resolved_store})
+    return retriever.model_copy(update={"index": resolved_index})
 
 
 def load_config(
@@ -72,5 +70,27 @@ def load_config(
         update={
             "data": resolved_data,
             "retriever": resolved_retriever,
+        }
+    )
+
+
+def load_production_config(
+    path: Path,
+    project_root: Path,
+) -> ProductionConfig:
+    """Load production configuration and resolve its index path."""
+
+    root = project_root.resolve()
+    config_path = resolve_path(path, root)
+
+    data = yaml.safe_load(config_path.read_text(encoding="utf-8"))
+    config = ProductionConfig.model_validate(data)
+
+    return config.model_copy(
+        update={
+            "retriever": _resolve_retriever_paths(
+                config.retriever,
+                root,
+            )
         }
     )

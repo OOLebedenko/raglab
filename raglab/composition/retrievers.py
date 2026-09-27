@@ -1,12 +1,13 @@
-from collections.abc import Callable, Sequence
+from collections.abc import Callable
+from pathlib import Path
 from typing import assert_never
 
-from langchain_core.documents import Document
 from langchain_core.retrievers import BaseRetriever
 
 from raglab.application.ports.retriever import Retriever
 from raglab.composition.config import (
     LexicalRetrieverConfig,
+    LocalIndexConfig,
     RetrieverConfig,
     VectorRetrieverConfig,
 )
@@ -17,10 +18,10 @@ from raglab.infrastructure.retrieval.lexical import BM25Retriever
 
 _LEXICAL_BUILDERS: dict[
     str,
-    Callable[[Sequence[Document], int], BaseRetriever],
+    Callable[[Path, int], BaseRetriever],
 ] = {
-    "bm25": lambda documents, k: BM25Retriever.from_documents(
-        documents,
+    "bm25s": lambda path, k: BM25Retriever.from_index(
+        path,
         k=k,
     ),
 }
@@ -31,8 +32,11 @@ def build_vector_retriever(
 ) -> BaseRetriever:
     """Build a vector retriever from configuration."""
 
+    if not isinstance(config.index, LocalIndexConfig):
+        raise NotImplementedError("Remote indexes are not implemented")
+
     embeddings = build_embeddings(config.embedding)
-    vector_store = build_vector_store(config.vector_store, embeddings)
+    vector_store = build_vector_store(config.index, embeddings)
 
     return vector_store.as_retriever(
         search_kwargs={"k": config.policy.top_k},
@@ -41,23 +45,22 @@ def build_vector_retriever(
 
 def build_lexical_retriever(
     config: LexicalRetrieverConfig,
-    documents: Sequence[Document],
 ) -> BaseRetriever:
     """Build a lexical retriever from configuration."""
 
-    try:
-        builder = _LEXICAL_BUILDERS[config.implementation]
-    except KeyError as exc:
-        raise ValueError(
-            f"Unsupported lexical retriever: {config.implementation}"
-        ) from exc
+    if not isinstance(config.index, LocalIndexConfig):
+        raise NotImplementedError("Remote indexes are not implemented")
 
-    return builder(documents, config.policy.top_k)
+    try:
+        builder = _LEXICAL_BUILDERS[config.index.type]
+    except KeyError as exc:
+        raise ValueError(f"Unsupported lexical retriever: {config.index.type}") from exc
+
+    return builder(config.index.path, config.policy.top_k)
 
 
 def build_retriever(
     config: RetrieverConfig,
-    documents: Sequence[Document] | None = None,
 ) -> Retriever:
     """Build and adapt a retriever from configuration."""
 
@@ -65,10 +68,7 @@ def build_retriever(
         retriever = build_vector_retriever(config)
 
     elif isinstance(config, LexicalRetrieverConfig):
-        if documents is None:
-            raise ValueError("Documents are required for lexical retrieval")
-
-        retriever = build_lexical_retriever(config, documents)
+        retriever = build_lexical_retriever(config)
 
     else:
         assert_never(config)

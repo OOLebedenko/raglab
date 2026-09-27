@@ -8,6 +8,7 @@ from pydantic import ValidationError
 from raglab.composition.config import (
     ExperimentConfig,
     LexicalRetrieverConfig,
+    LocalIndexConfig,
     VectorRetrieverConfig,
     load_config,
 )
@@ -31,8 +32,9 @@ def config_data() -> dict[str, Any]:
                 "type": "huggingface",
                 "model_name": "BAAI/bge-m3",
             },
-            "vector_store": {
+            "index": {
                 "type": "chroma",
+                "location": "local",
                 "path": "data/chroma",
                 "options": {
                     "collection_name": "raglab",
@@ -68,9 +70,13 @@ def lexical_retriever_data() -> dict[str, Any]:
 
     return {
         "type": "lexical",
-        "implementation": "bm25",
         "policy": {
             "top_k": 5,
+        },
+        "index": {
+            "type": "bm25s",
+            "location": "local",
+            "path": "data/bm25",
         },
     }
 
@@ -99,7 +105,8 @@ def test_load_config_resolves_relative_paths(
     assert config.data.benchmark == tmp_path / "data/benchmark.json"
 
     assert isinstance(config.retriever, VectorRetrieverConfig)
-    assert config.retriever.vector_store.path == tmp_path / "data/chroma"
+    assert isinstance(config.retriever.index, LocalIndexConfig)
+    assert config.retriever.index.path == tmp_path / "data/chroma"
 
 
 def test_load_lexical_config(
@@ -123,7 +130,9 @@ def test_load_lexical_config(
     )
 
     assert isinstance(config.retriever, LexicalRetrieverConfig)
-    assert config.retriever.implementation == "bm25"
+    assert isinstance(config.retriever.index, LocalIndexConfig)
+    assert config.retriever.index.type == "bm25s"
+    assert config.retriever.index.path == tmp_path / "data/bm25"
     assert config.retriever.policy.top_k == 5
     assert config.data.chunks == tmp_path / "data/chunks.json"
 

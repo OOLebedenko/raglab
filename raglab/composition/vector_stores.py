@@ -5,7 +5,7 @@ from typing import Any
 from langchain_core.embeddings import Embeddings
 from langchain_core.vectorstores import VectorStore
 
-from raglab.composition.config import LocalVectorStoreConfig
+from raglab.composition.config import LocalIndexConfig
 from raglab.infrastructure.vector_stores.chroma import load_chroma
 
 # Register loaders for additional vector stores here.
@@ -18,7 +18,7 @@ _STORE_LOADERS: dict[
 
 
 def build_vector_store(
-    config: LocalVectorStoreConfig,
+    config: LocalIndexConfig,
     embeddings: Embeddings,
 ) -> VectorStore:
     """Connect to an existing local vector store."""

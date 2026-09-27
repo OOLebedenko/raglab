@@ -2,13 +2,12 @@ from pathlib import Path
 from unittest.mock import Mock, patch
 
 import pytest
-from langchain_core.documents import Document
 from langchain_core.retrievers import BaseRetriever
 
 from raglab.composition.config import (
     EmbeddingConfig,
     LexicalRetrieverConfig,
-    LocalVectorStoreConfig,
+    LocalIndexConfig,
     RetrievalPolicyConfig,
     VectorRetrieverConfig,
 )
@@ -26,8 +25,9 @@ def test_build_vector_retriever(tmp_path: Path) -> None:
             type="huggingface",
             model_name="test-model",
         ),
-        vector_store=LocalVectorStoreConfig(
+        index=LocalIndexConfig(
             type="chroma",
+            location="local",
             path=tmp_path,
             options={"collection_name": "test_collection"},
         ),
@@ -45,7 +45,7 @@ def test_build_vector_retriever(tmp_path: Path) -> None:
     mock_embeddings.assert_called_once_with(config.embedding)
 
     mock_store.assert_called_once_with(
-        config.vector_store,
+        config.index,
         mock_embeddings.return_value,
     )
 
@@ -56,35 +56,38 @@ def test_build_vector_retriever(tmp_path: Path) -> None:
     assert result is retriever
 
 
-def test_build_lexical_retriever() -> None:
+def test_build_lexical_retriever(tmp_path: Path) -> None:
     config = LexicalRetrieverConfig(
         type="lexical",
-        implementation="bm25",
         policy=RetrievalPolicyConfig(top_k=7),
+        index=LocalIndexConfig(
+            type="bm25s",
+            location="local",
+            path=tmp_path,
+        ),
     )
-    documents = [
-        Document(page_content="First chunk", metadata={"source": "a.md"}),
-        Document(page_content="Second chunk", metadata={"source": "b.md"}),
-    ]
 
     with patch(
-        "raglab.composition.retrievers.BM25Retriever.from_documents"
+        "raglab.composition.retrievers.BM25Retriever.from_index"
     ) as mock_factory:
-        result = build_lexical_retriever(config, documents)
+        result = build_lexical_retriever(config)
 
-    mock_factory.assert_called_once_with(documents, k=7)
+    mock_factory.assert_called_once_with(tmp_path, k=7)
     assert result is mock_factory.return_value
 
 
-def test_build_lexical_retriever_rejects_unknown_implementation() -> None:
+def test_build_lexical_retriever_rejects_unknown_implementation(
+    tmp_path: Path,
+) -> None:
     config = LexicalRetrieverConfig(
         type="lexical",
-        implementation="unknown",
         policy=RetrievalPolicyConfig(top_k=5),
+        index=LocalIndexConfig(
+            type="unknown",
+            location="local",
+            path=tmp_path,
+        ),
     )
 
     with pytest.raises(ValueError, match="Unsupported lexical retriever"):
-        build_lexical_retriever(
-            config,
-            [Document(page_content="Example")],
-        )
+        build_lexical_retriever(config)

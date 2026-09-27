@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import Any, Literal
+from typing import Annotated, Any, Literal
 
 from pydantic import Field, PositiveInt
 
@@ -19,19 +19,39 @@ class EmbeddingConfig(ConfigModel):
     model_name: str
 
 
-class LocalVectorStoreConfig(ConfigModel):
-    """Configure an existing vector store.
-
-    The path points to a prepared index. Its interpretation
-    depends on the vector store implementation.
+class IndexConfig(ConfigModel):
+    """Base configuration for a search index.
 
     Options contain non-sensitive implementation-specific parameters.
     Secrets must be provided separately through environment settings.
     """
 
     type: str
-    path: Path
     options: dict[str, Any] = Field(default_factory=dict)
+
+
+class LocalIndexConfig(IndexConfig):
+    """Configure an existing local search index.
+
+    The path points to a prepared index. Its interpretation
+    depends on the index implementation.
+    """
+
+    location: Literal["local"]
+    path: Path
+
+
+class RemoteIndexConfig(IndexConfig):
+    """Configure a remote search index."""
+
+    location: Literal["remote"]
+    endpoint: str = Field(min_length=1)
+
+
+type IndexConfigVariant = Annotated[
+    LocalIndexConfig | RemoteIndexConfig,
+    Field(discriminator="location"),
+]
 
 
 class VectorRetrieverConfig(ConfigModel):
@@ -40,12 +60,12 @@ class VectorRetrieverConfig(ConfigModel):
     type: Literal["vector"]
     policy: RetrievalPolicyConfig
     embedding: EmbeddingConfig
-    vector_store: LocalVectorStoreConfig
+    index: IndexConfigVariant
 
 
 class LexicalRetrieverConfig(ConfigModel):
     """Configure lexical retrieval."""
 
     type: Literal["lexical"]
-    implementation: str
     policy: RetrievalPolicyConfig
+    index: IndexConfigVariant
