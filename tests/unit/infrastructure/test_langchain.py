@@ -1,6 +1,6 @@
 from langchain_core.documents import Document
 
-from raglab.infrastructure.retrieval.langchain import LangChainRetrieverAdapter
+from raglab.infrastructure.retrieval.adapter import LangChainRetrieverAdapter
 
 
 class FakeLangChainRetriever:

@@ -10,8 +10,13 @@ description = "Modular RAG experimentation framework for retrieval, generation, 
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
 dependencies = [
+    "bm25s>=0.2,<1",
     "langchain-core>=1,<2",
+    "langchain-chroma>=1,<2",
+    "langchain-huggingface>=1,<2",
+    "langchain-gigachat>=0.5.1,<0.6",
     "pydantic>=2,<3",
+    "PyYAML>=6,<7",
 ]
 
 
@@ -20,6 +25,7 @@ dev = [
     "mypy>=2,<3",
     "pytest>=9,<10",
     "ruff>=0.11,<1",
+    "types-PyYAML>=6,<7",
 ]
 
 
@@ -44,15 +50,16 @@ files = [
 # LangChain has a large type dependency graph that makes mypy very slow.
 # Skip analyzing its internals; the RAGLab integration is covered by adapter tests.
 [[tool.mypy.overrides]]
-module = ["langchain_core.*"]
-follow_imports = "skip"
-[[tool.mypy.overrides]]
 module = [
-    "langchain_core",
     "langchain_core.*",
+    "langchain_huggingface",
+    "langchain_chroma",
 ]
 follow_imports = "skip"
 
+[[tool.mypy.overrides]]
+module = ["bm25s", "bm25s.*"]
+ignore_missing_imports = true
 
 [tool.ruff]
 target-version = "py312"
