@@ -1,0 +1,29 @@
+data:
+  chunks: data/chunks.json
+  benchmark: data/benchmark.json
+
+retriever:
+  type: lexical
+  index:
+    type: bm25s
+    location: local
+    path: artifacts/indexes/cendara-bm25
+
+retrieval_policy:
+  top_k: 5
+
+evaluation:
+  judge:
+    type: llm
+    model:
+      provider: gigachat
+      name: GigaChat-2
+    prompt: default_relevance
+    max_attempts: 3
+
+  metrics:
+    - type: recall_at_k
+      k: 1
+    - type: recall_at_k
+      k: 5
+    - type: reciprocal_rank
