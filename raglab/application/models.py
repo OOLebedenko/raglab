@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from typing import Any
+from typing import Any, Literal
 
 
 @dataclass(frozen=True)
@@ -34,6 +34,41 @@ class QueryRelevance:
 
     matches: frozenset[tuple[int, int]]
     gold_count: int
+
+
+@dataclass(frozen=True)
+class EvaluationSuccess:
+    """Represent a successfully evaluated benchmark sample."""
+
+    sample: EvaluationSample
+    retrieved_chunks: list[RetrievedChunk]
+    relevance: QueryRelevance
+    metrics: dict[str, float]
+
+
+@dataclass(frozen=True)
+class JudgeFailure:
+    """Preserve retrieval results after an expected judge failure."""
+
+    sample: EvaluationSample
+    retrieved_chunks: list[RetrievedChunk]
+    error_type: str
+    error: str
+
+
+@dataclass(frozen=True)
+class EvaluationRunSummary:
+    """Summarize a completed evaluation experiment."""
+
+    queries_total: int
+    queries_evaluated: int
+    queries_failed: int
+    metrics: dict[str, float | None]
+    status: Literal[
+        "completed",
+        "completed_with_judge_failures",
+        "failed",
+    ]
 
 
 @dataclass(frozen=True)

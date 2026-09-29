@@ -18,6 +18,7 @@ class LlmJudgeConfig(ConfigModel):
     type: Literal["llm"]
     model: ModelConfig
     prompt: str = "default_relevance"
+    max_attempts: PositiveInt = 3
 
 
 class RecallAtKConfig(ConfigModel):

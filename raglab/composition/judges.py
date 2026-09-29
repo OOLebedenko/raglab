@@ -37,6 +37,7 @@ def _build_judge(
         return LangChainRelevanceJudge(
             model=chat_model,
             prompt=DEFAULT_RELEVANCE_PROMPT,
+            max_attempts=config.max_attempts,
         )
 
     assert_never(config)

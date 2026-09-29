@@ -48,23 +48,37 @@ def main() -> None:
 def evaluate(
     config: ConfigPath,
     project_root: ProjectRoot = None,
+    retry_failed: Annotated[
+        bool,
+        typer.Option(
+            "--retry-failed",
+            help="Re-evaluate queries that previously failed during judging",
+        ),
+    ] = False,
 ) -> None:
     """Evaluate retrieval using the experiment configuration"""
 
     root = project_root or Path.cwd()
 
     with console.status("Running retrieval evaluation..."):
-        results = run_evaluation(
+        summary = run_evaluation(
             config_path=config,
             project_root=root,
+            retry_failed=retry_failed,
         )
 
     table = Table(title="Retrieval evaluation")
     table.add_column("Metric")
     table.add_column("Value", justify="right")
 
-    for name, value in results.items():
-        table.add_row(name, f"{value:.4f}")
+    table.add_row("Status", summary.status)
+    table.add_row("Total queries", str(summary.queries_total))
+    table.add_row("Evaluated", str(summary.queries_evaluated))
+    table.add_row("Judge failures", str(summary.queries_failed))
+
+    for name, value in summary.metrics.items():
+        formatted = f"{value:.4f}" if value is not None else "N/A"
+        table.add_row(name, formatted)
 
     console.print(table)
 
