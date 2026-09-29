@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from typing import Any
+from typing import Any, Literal
 
 
 @dataclass(frozen=True)
@@ -54,6 +54,21 @@ class JudgeFailure:
     retrieved_chunks: list[RetrievedChunk]
     error_type: str
     error: str
+
+
+@dataclass(frozen=True)
+class EvaluationRunSummary:
+    """Summarize a completed evaluation experiment."""
+
+    queries_total: int
+    queries_evaluated: int
+    queries_failed: int
+    metrics: dict[str, float | None]
+    status: Literal[
+        "completed",
+        "completed_with_judge_failures",
+        "failed",
+    ]
 
 
 @dataclass(frozen=True)
