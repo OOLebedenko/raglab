@@ -42,7 +42,7 @@ class EvaluationSuccess:
 
     sample: EvaluationSample
     retrieved_chunks: list[RetrievedChunk]
-    matches: frozenset[tuple[int, int]]
+    relevance: QueryRelevance
     metrics: dict[str, float]
 
 

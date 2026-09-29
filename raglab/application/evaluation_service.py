@@ -1,10 +1,10 @@
 from raglab.application.errors import RelevanceJudgeError
-from raglab.application.evaluation.index import build_index
 from raglab.application.evaluation.metrics import Metric
 from raglab.application.models import (
     EvaluationSample,
     EvaluationSuccess,
     JudgeFailure,
+    QueryRelevance,
 )
 from raglab.application.ports.relevance import RelevanceJudge
 from raglab.application.ports.retriever import Retriever
@@ -38,10 +38,9 @@ class EvaluationService:
         retrieved = self._retriever.retrieve(sample.query)
 
         try:
-            relevance = build_index(
+            matches = self._relevance_judge.find_matches(
                 retrieved=retrieved,
                 gold=sample.supporting_facts,
-                judge=self._relevance_judge,
             )
         except RelevanceJudgeError as exc:
             return JudgeFailure(
@@ -51,10 +50,15 @@ class EvaluationService:
                 error=str(exc),
             )
 
+        relevance = QueryRelevance(
+            matches=matches,
+            gold_count=len(sample.supporting_facts),
+        )
+
         return EvaluationSuccess(
             sample=sample,
             retrieved_chunks=retrieved,
-            matches=relevance.matches,
+            relevance=relevance,
             metrics={
                 metric.name: float(metric.calculate(relevance))
                 for metric in selected_metrics
