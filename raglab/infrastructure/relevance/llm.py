@@ -11,13 +11,14 @@ from langchain_core.messages import (
 from langchain_core.output_parsers import PydanticOutputParser
 from pydantic import BaseModel, Field
 
+from raglab.application.errors import RelevanceJudgeError
 from raglab.application.models import RetrievedChunk, SupportingFact
 from raglab.infrastructure.relevance.prompt import RelevancePrompt
 
 logger = logging.getLogger(__name__)
 
 
-class JudgeOutputError(ValueError):
+class JudgeOutputError(RelevanceJudgeError):
     """Indicate that the relevance judge returned an invalid response."""
 
 

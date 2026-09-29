@@ -37,6 +37,26 @@ class QueryRelevance:
 
 
 @dataclass(frozen=True)
+class EvaluationSuccess:
+    """Represent a successfully evaluated benchmark sample."""
+
+    sample: EvaluationSample
+    retrieved_chunks: list[RetrievedChunk]
+    matches: frozenset[tuple[int, int]]
+    metrics: dict[str, float]
+
+
+@dataclass(frozen=True)
+class JudgeFailure:
+    """Preserve retrieval results after an expected judge failure."""
+
+    sample: EvaluationSample
+    retrieved_chunks: list[RetrievedChunk]
+    error_type: str
+    error: str
+
+
+@dataclass(frozen=True)
 class RagResult:
     """Represent the result of a RAG query."""
 
