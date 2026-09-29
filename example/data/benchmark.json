@@ -1,0 +1,1897 @@
+[
+  {
+    "query": "What is the focus of the philosophy department at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "The Department of Philosophy at Cendara University offers a rich curriculum for B.A. and M.A. students, emphasizing rigorous analysis in logic, ethics, epistemology, and the history of philosophy. Our program is designed to prepare students for graduate study, teaching, or careers requiring critical thought, communication, and ethical reasoning.",
+        "source": "dept_of_Philosophy_catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "How does PHIL 101 differ from PHIL 120 in content?",
+    "supporting_facts": [
+      {
+        "text": "PHIL 101: Introduction to Philosophy is a broad introduction to central questions in philosophy, including reality, knowledge, morality, and free will. It includes readings from classical and contemporary philosophers.",
+        "source": "dept_of_Philosophy_catalog.md"
+      },
+      {
+        "text": "PHIL 120: Introduction to Logic covers the fundamentals of formal reasoning and logical argument, including categorical and propositional logic, logical fallacies, and evaluating arguments in philosophical and real-world contexts.",
+        "source": "dept_of_Philosophy_catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "How can I enroll in PHIL 201: Ancient Greek Philosophy?",
+    "supporting_facts": [
+      {
+        "text": "PHIL 201: Ancient Greek Philosophy requires either PHIL 101 or the consent of the instructor as a prerequisite. Students interested in enrolling should ensure they meet these requirements and consult the department or academic adviser for further guidance on enrollment procedures.",
+        "source": "dept_of_Philosophy_catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "Why might a student choose to take PHIL 325: Ethics of Technology?",
+    "supporting_facts": [
+      {
+        "text": "PHIL 325 explores ethical issues surrounding current and emerging technologies, such as artificial intelligence, privacy, and biotechnology. It involves critical discussion and policy analysis, making it ideal for students interested in analyzing the intersection of ethics and technology and understanding its impact on society.",
+        "source": "dept_of_Philosophy_catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "Is there a course on Existentialism offered in this catalog?",
+    "supporting_facts": [
+      {
+        "text": "Yes, PHIL 341: Existentialism focuses on existentialist thinkers like Kierkegaard, Nietzsche, Sartre, and de Beauvoir, exploring topics such as authenticity, freedom, absurdity, and the meaning of life.",
+        "source": "dept_of_Philosophy_catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "What resources does Cendara University offer to its alumni?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University fosters lifelong connections through a variety of exclusive resources available to alumni and current students. These include the Cendara Alumni Portal, regional alumni chapters, career networking events, and professional interest groups. Alumni can participate in events like the Annual Career Connect, Mentorship Week, and monthly webinar series, in addition to having access to a secure online directory for networking and mentorship opportunities.",
+        "source": "alumni_directory.md"
+      }
+    ]
+  },
+  {
+    "query": "How can students connect with alumni mentors at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Students are encouraged to register for alumni mentors by signing up at [mentoring.cendara.edu](https://mentoring.cendara.edu). They can also attend Networking Nights scheduled monthly or access the Online Directory to contact alumni for informational interviews and internship opportunities.",
+        "source": "alumni_directory.md"
+      }
+    ]
+  },
+  {
+    "query": "Why does Cendara University encourage participation in regional alumni chapters?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University encourages participation in regional alumni chapters to foster community and network building among graduates. These chapters, such as the Cendara Bay Area Club, Cendara London Society, and the Southeast Asia Alumni Network, offer events like mixers, seminars, and leadership summits that provide valuable opportunities for professional development and social engagement.",
+        "source": "alumni_directory.md"
+      }
+    ]
+  },
+  {
+    "query": "How do the professional interest groups at Cendara differ from traditional alumni chapters?",
+    "supporting_facts": [
+      {
+        "text": "Professional interest groups at Cendara University, such as the Women in STEM Network and the Cendara Entrepreneurs Collective, focus on specific fields or professional interests, providing targeted networking and resource sharing. In contrast, traditional alumni chapters are organized geographically and focus on broader community and networking activities, offering events like cultural evenings and guest speaker panels.",
+        "source": "alumni_directory.md"
+      }
+    ]
+  },
+  {
+    "query": "When does Cendara University hold its Annual Career Connect event?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University holds its Annual Career Connect event in April. This event features alumni and student panel discussions, resume workshops, and a job fair, providing opportunities for professional development and career advancement.",
+        "source": "alumni_directory.md"
+      }
+    ]
+  },
+  {
+    "query": "What is the history and founding of Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University was founded in 1972 and spans a 180-acre campus nestled on the eastern edge of Windham City. The campus combines modern innovation with a respect for natural landscapes, offering an environment conducive to academic excellence and community engagement.",
+        "source": "campus_overview.md"
+      }
+    ]
+  },
+  {
+    "query": "How does the Morgan Academic Complex differ from the Rosenfeld Science Center?",
+    "supporting_facts": [
+      {
+        "text": "The Morgan Academic Complex, constructed in 1974 and renovated in 2017, houses 60 classrooms, 7 computer labs, and 15 faculty offices, supporting the College of Arts & Humanities. It features multimedia-enabled lecture halls with a maximum capacity of 250 students each. On the other hand, the Rosenfeld Science Center, constructed in 1983 and expanded in 2015, is a four-story structure dedicated to the Departments of Biology, Chemistry, and Environmental Sciences. It includes 8 research laboratories, 2 lecture auditoriums, a rooftop greenhouse, and a microscopy imaging core.",
+        "source": "campus_overview.md"
+      }
+    ]
+  },
+  {
+    "query": "Why is the GreenTech Building significant for Cendara University's sustainability efforts?",
+    "supporting_facts": [
+      {
+        "text": "In 2023, the completion of the GreenTech Building, which achieved LEED Platinum certification, demonstrated Cendara University’s commitment to environmental sustainability. It houses Environmental Sustainability Programs and reflects the university's priority on sustainable practices and infrastructure.",
+        "source": "campus_overview.md"
+      }
+    ]
+  },
+  {
+    "query": "How can students utilize the resources at Samuelson Library?",
+    "supporting_facts": [
+      {
+        "text": "Students at Cendara University can utilize the Samuelson Library's extensive resources, including three floors of print collections and digital media rooms, 200 personal study carrels, and 24 group study rooms. The library also features a makerspace with 3D printers and VR suites, as well as a café and quiet reading atrium.",
+        "source": "campus_overview.md"
+      }
+    ]
+  },
+  {
+    "query": "Does Cendara University offer facilities for varsity sports?",
+    "supporting_facts": [
+      {
+        "text": "Yes, Cendara University offers facilities for varsity sports, including Pinecrest Stadium with a seating capacity of 4,200, primarily used for soccer and track and field, and the Varsity Sports Hall, which includes locker rooms, training suites, and offices for 11 varsity teams.",
+        "source": "campus_overview.md"
+      }
+    ]
+  },
+  {
+    "query": "What is the history of Cendara University's commitment to diversity and inclusion?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University is steadfast in its dedication to nurturing an academic community where equity, access, and belonging are woven into the fabric of campus life. From its inception, Cendara University has viewed diversity as integral to academic excellence and institutional vitality.",
+        "source": "diversity_and_inclusion.md"
+      },
+      {
+        "text": "The adoption of the *Inclusivity Pact* in 1985 solidified their role as a leader among regional universities in fostering equity. The Pact mandates ongoing evaluation and action in areas such as equitable recruitment, retention, and advancement of underrepresented groups.",
+        "source": "diversity_and_inclusion.md"
+      }
+    ]
+  },
+  {
+    "query": "Why does Cendara University consider diversity integral to its mission?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University's commitment goes beyond compliance; it is an enduring pledge to champion fairness, confront barriers to opportunity, and assure that every community member is empowered to thrive. They believe diversity is integral to academic excellence and institutional vitality.",
+        "source": "diversity_and_inclusion.md"
+      },
+      {
+        "text": "“Our progress is ongoing, and our commitment, unwavering.” — President Marisol Ortega emphasizes that diversity and inclusion are not supplementary but central to the university's mission, celebrating the vibrancy that difference brings.",
+        "source": "diversity_and_inclusion.md"
+      }
+    ]
+  },
+  {
+    "query": "How can students participate in diversity efforts at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Students can engage in diversity efforts through various institutionalized programs and centers such as the Office of Diversity Initiatives, Multicultural Resource Center, Center for Gender Equity, and Accessibility Services Office.",
+        "source": "diversity_and_inclusion.md"
+      },
+      {
+        "text": "Additionally, programs like Cendara Unity Dialogues, Inclusive Pedagogy Fellows, and Cultural Student Organizations offer students platforms to participate and influence inclusion efforts.",
+        "source": "diversity_and_inclusion.md"
+      }
+    ]
+  },
+  {
+    "query": "How does Cendara University's diversity among faculty compare to its student population?",
+    "supporting_facts": [
+      {
+        "text": "For the 2023-2024 academic year, women represent 55% of students and 44% of faculty, while 10% of students and 12% of faculty are African American/Black. Asians/Asian Americans make up 15% of students and 15% of faculty.",
+        "source": "diversity_and_inclusion.md"
+      },
+      {
+        "text": "The proportion of Hispanic/Latinx is 13% among students and 10% among faculty, showing some disparities across different demographics.",
+        "source": "diversity_and_inclusion.md"
+      }
+    ]
+  },
+  {
+    "query": "“How does Cendara University's international student orientation differ from traditional undergraduate orientation?”",
+    "supporting_facts": [
+      {
+        "text": "All new international students must attend the five-day orientation, which covers immigration regulations, campus resources, academic integrity, and cultural adjustment workshops.",
+        "source": "international_student_guide.md"
+      },
+      {
+        "text": "International Student Orientation includes specific sessions on immigration compliance, health insurance enrollment, and banking, which may not be covered in typical undergraduate orientations.",
+        "source": "international_student_guide.md"
+      }
+    ]
+  },
+  {
+    "query": "“How do I apply for on-campus employment at Cendara University?”",
+    "supporting_facts": [
+      {
+        "text": "On-campus employment allows international students to work up to 20 hours per week during semesters and full-time during breaks. Opportunities include roles such as library assistant and research aide.",
+        "source": "international_student_guide.md"
+      },
+      {
+        "text": "For employment, international students need to secure a job offer and can then apply for a Social Security Number (SSN).",
+        "source": "international_student_guide.md"
+      }
+    ]
+  },
+  {
+    "query": "“Why is it important for international students at Cendara University to attend the orientation?”",
+    "supporting_facts": [
+      {
+        "text": "The orientation covers essential topics such as immigration regulations, academic expectations, health insurance enrollment, and cultural adjustment, providing a holistic introduction to university life.",
+        "source": "international_student_guide.md"
+      },
+      {
+        "text": "Peer Mentors are available to help new students acclimate, making the orientation critical for successful integration into the Cendara community.",
+        "source": "international_student_guide.md"
+      }
+    ]
+  },
+  {
+    "query": "“What community and cultural programs are available for international students at Cendara University?”",
+    "supporting_facts": [
+      {
+        "text": "Cendara University offers a variety of cultural programs, including International Night, Lunar New Year Festival, Diwali Celebration, and Eid Gathering, which celebrate global diversity.",
+        "source": "international_student_guide.md"
+      },
+      {
+        "text": "The International Students Association organizes social events, cultural festivals, and mentorship programs, providing ample opportunities for engagement.",
+        "source": "international_student_guide.md"
+      }
+    ]
+  },
+  {
+    "query": "“Is health insurance mandatory for international students at Cendara University?”",
+    "supporting_facts": [
+      {
+        "text": "All international students are required to enroll in the Cendara University Student Health Insurance Plan (SHIP), which includes coverage for local hospitals and emergency care.",
+        "source": "international_student_guide.md"
+      },
+      {
+        "text": "Waivers are available if students have comparable insurance, indicating that health insurance is indeed mandatory unless an exemption is granted.",
+        "source": "international_student_guide.md"
+      }
+    ]
+  },
+  {
+    "query": "How do I register for classes at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Registering for classes involves accessing the MyCendara portal, selecting the “Course Registration” tab, choosing the upcoming semester, searching for courses, adding them to your “Enrollment Cart,” and submitting for approval.",
+        "source": "enrollment_process.md"
+      }
+    ]
+  },
+  {
+    "query": "How can I change my course schedule after enrollment?",
+    "supporting_facts": [
+      {
+        "text": "Log in to MyCendara, access “Enrollment Management,” search and add available courses, or drop current ones directly from your schedule during the add/drop period. For withdrawals or modifications after adding/dropping, follow the specific procedures outlined in the student guide.",
+        "source": "enrollment_process.md"
+      }
+    ]
+  },
+  {
+    "query": "What should I prepare before enrolling at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Before enrollment, review academic program requirements, check key dates on the academic calendar, and meet with your advisor for academic planning, transfer credits, and schedule discussions.",
+        "source": "enrollment_process.md"
+      }
+    ]
+  },
+  {
+    "query": "Is it mandatory for new students to meet with an advisor at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "While strongly recommended, undergraduate first-year and transfer students must meet with an advisor to approve their initial schedule, whereas graduate students should consult with their assigned faculty advisor.",
+        "source": "enrollment_process.md"
+      }
+    ]
+  },
+  {
+    "query": "What is the process for withdrawing from a course at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Access the “Course Withdrawal” form in MyCendara, obtain necessary electronic signatures, submit the form, and monitor the status. Withdrawals are permitted until the mid-semester deadline, as specified in the academic calendar.",
+        "source": "enrollment_process.md"
+      }
+    ]
+  },
+  {
+    "query": "What services does Cendara University’s Center for Career Development offer?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University’s Center for Career Development (CCD) provides the following services: On-Campus Recruitment Drives, Industry Internship Programs, Career Counseling & Resume Workshops, Mock Interviews & Assessment Centers, Employer Networking Events, Alumni Mentorship Program, and Graduate and Professional School Advising.",
+        "source": "placement_report.md"
+      }
+    ]
+  },
+  {
+    "query": "How does the placement rate of the School of Business compare to the School of Arts & Humanities in Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "The School of Business at Cendara University has a placement rate of 98%. In contrast, the School of Arts & Humanities has a placement rate of 83%, indicating a higher placement success in the School of Business.",
+        "source": "placement_report.md"
+      }
+    ]
+  },
+  {
+    "query": "Why is Cendara University effective in transitioning its graduates into the workforce?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University is effective in transitioning its graduates into the workforce due to its robust campus placement program which leverages strong industry connections, comprehensive career services, and dedicated faculty mentorship. These elements ensure students from all academic backgrounds have meaningful career opportunities.",
+        "source": "placement_report.md"
+      }
+    ]
+  },
+  {
+    "query": "How can students register for the placement process at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Eligible final-year students at Cendara University must register with the Center for Career Development and submit their CVs as the first step of the placement process.",
+        "source": "placement_report.md"
+      }
+    ]
+  },
+  {
+    "query": "Does Cendara University charge students a fee for placement services?",
+    "supporting_facts": [
+      {
+        "text": "No, Cendara University does not charge students any fees for placement services, according to its Placement Policy.",
+        "source": "placement_report.md"
+      }
+    ]
+  },
+  {
+    "query": "What is the history of the Center for Interdisciplinary Innovation at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Center for Interdisciplinary Innovation (CII)\nEstablished: 2023 \nDirector: Dr. Lucia Benton \nMission: Fostering entrepreneurship and cross-disciplinary solutions to challenges such as climate change, urban development, and digital transformation. \nCurrent Projects: Urban Resilience Initiative, Adaptive Learning Technologies in Higher Education, Community-Based Clean Water Solutions.",
+        "source": "research_overview.md"
+      }
+    ]
+  },
+  {
+    "query": "What factors might influence the success of Cendara's Urban Resilience Initiative?",
+    "supporting_facts": [
+      {
+        "text": "Center for Interdisciplinary Innovation (CII) focuses on cross-disciplinary solutions to challenges like urban development. The Urban Resilience Initiative is a collaborative project with the City of Riverdale, which could be influenced by partnerships, funding, city engagement, and innovative approaches.",
+        "source": "research_overview.md"
+      }
+    ]
+  },
+  {
+    "query": "How can one participate in the Global Health Futures Lecture Series by CGS at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "2024: Launch of the “Global Health Futures Lecture Series” by the Center for Global Studies (CGS), featuring Nobel laureate Dr. Maria Sosa. Participation details could involve checking Cendara's event announcements, registering through their platform, or contacting CGS.",
+        "source": "research_overview.md"
+      }
+    ]
+  },
+  {
+    "query": "Is there a dedicated research center for digital humanities at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Santoro Digital Humanities Lab\nFounded: 2016 \nDirector: Dr. Elliott Voss \nPurpose: Integration of digital tools and computational analysis into humanities research. Highlights include projects like Mapping Lost Languages and Interactive Digital Oral Histories.",
+        "source": "research_overview.md"
+      }
+    ]
+  },
+  {
+    "query": "What is the history of Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University is located in the thriving city of Larkspur and was founded in 1927.",
+        "source": "student_handbook.md"
+      },
+      {
+        "text": "The university is home to over 8,000 undergraduate and graduate students, offering a blend of urban energy and serene, landscaped campus environments.",
+        "source": "student_handbook.md"
+      }
+    ]
+  },
+  {
+    "query": "How can I start a new student organization at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Cendara students can start a new organization by submitting a proposal to the Student Life Office. The university supports over 90 clubs and societies, providing many opportunities for student engagement.",
+        "source": "student_handbook.md"
+      }
+    ]
+  },
+  {
+    "query": "Does Cendara University have a Health & Wellness Center on campus?",
+    "supporting_facts": [
+      {
+        "text": "Yes, Cendara University has a Health & Wellness Center located at the west end of the Arches Academic Complex, offering services such as routine check-ups, immunizations, and telemedicine appointments.",
+        "source": "student_handbook.md"
+      }
+    ]
+  },
+  {
+    "query": "How do the dining services at Cendara University accommodate different dietary needs compared to typical university cafeterias?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University offers meal options including vegetarian, vegan, and gluten-free choices at dining halls such as Oakleaf Commons and Willow Café. All resident students are required to purchase a meal plan from options like Silver, Gold, or Platinum.",
+        "source": "student_handbook.md"
+      }
+    ]
+  },
+  {
+    "query": "Why is maintaining academic integrity important at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University emphasizes academic integrity through strict policies against plagiarism and cheating; violations result in significant consequences such as failing grades or expulsion to uphold the university’s principles of respect and integrity.",
+        "source": "student_handbook.md"
+      }
+    ]
+  },
+  {
+    "query": "“How is the B.Sc. in Mathematics program structured in terms of pathways at Cendara University?”",
+    "supporting_facts": [
+      {
+        "text": "The B.Sc. in Mathematics offers three pathways: Pure Mathematics, Applied Mathematics, and Data Science.",
+        "source": "dept_of_Math_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "“What are the prerequisites for MAT 310: Real Analysis I?”",
+    "supporting_facts": [
+      {
+        "text": "MAT 310 requires MAT 102: Calculus II and MAT 225: Introduction to Mathematical Proof.",
+        "source": "dept_of_Math_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "“How do I contact the Department of Mathematics and Statistics at Cendara University?”",
+    "supporting_facts": [
+      {
+        "text": "For questions, contact the Department of Mathematics and Statistics at mathstat@cendara.edu.",
+        "source": "dept_of_Math_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "“Why might a student choose to study MAT 450: Data Mining and Statistical Learning?”",
+    "supporting_facts": [
+      {
+        "text": "MAT 450 covers algorithms and theory behind data mining, supervised and unsupervised learning, clustering, classification, and validation methods, offering valuable skills for data analysis.",
+        "source": "dept_of_Math_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "“Is Calculus I required before taking Linear Algebra I at Cendara University?”",
+    "supporting_facts": [
+      {
+        "text": "Yes, MAT 101: Calculus I is a prerequisite for MAT 120: Linear Algebra I.",
+        "source": "dept_of_Math_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "What courses does Cendara University offer for undergraduate students in Mechanical Engineering?",
+    "supporting_facts": [
+      {
+        "text": "Below is a comprehensive listing of all Mechanical Engineering courses offered for undergraduate (B.Eng.) and graduate (M.Eng.) students. Each entry includes the course code, title, description, prerequisites, and assigned credit hours.",
+        "source": "dept_of_Mechanical_Catalog.md"
+      },
+      {
+        "text": "## Undergraduate Courses (B.Eng.)\n- **MECH 101**: Introduction to Mechanical Engineering\n- **MECH 111**: Engineering Graphics & CAD\n- **MECH 122**: Engineering Mechanics I – Statics\n- **MECH 123**: Engineering Mechanics II – Dynamics\n- **MECH 201**: Materials Science for Engineers\n- **MECH 231**: Thermodynamics I\n- **MECH 241**: Fluid Mechanics\n- **MECH 252**: Manufacturing Processes\n- **MECH 263**: Computer-Aided Manufacturing (CAM)\n- **MECH 272**: Mechatronics\n- **MECH 321**: Mechanics of Materials\n- **MECH 331**: Thermodynamics II\n- **MECH 342**: Heat Transfer\n- **MECH 353**: Mechanical Design I\n- **MECH 354**: Mechanical Design II\n- **MECH 371**: Dynamics of Machinery\n- **MECH 401**: Senior Project I\n- **MECH 402**: Senior Project II",
+        "source": "dept_of_Mechanical_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "What are the differences between MECH 101 and MECH 321?",
+    "supporting_facts": [
+      {
+        "text": "### MECH 101: Introduction to Mechanical Engineering\n**Credits:** 3 \n**Description:** \nAn overview of the field of mechanical engineering, including its history, fundamental principles, and modern applications. Topics include major subdisciplines, an introduction to engineering ethics, and industry practices. \n**Prerequisites:** None",
+        "source": "dept_of_Mechanical_Catalog.md"
+      },
+      {
+        "text": "### MECH 321: Mechanics of Materials\n**Credits:** 4 \n**Description:** \nCovers stress and strain analysis, axial loading, bending, shear, torsion, deflection, and stability of structural members. Laboratory component included. \n**Prerequisites:** MECH 123 (Engineering Mechanics II), MECH 201 (Materials Science)",
+        "source": "dept_of_Mechanical_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "Why does the course MECH 231 require PHYS 130 and MATH 121 as prerequisites?",
+    "supporting_facts": [
+      {
+        "text": "### MECH 231: Thermodynamics I \n**Credits:** 4 \n**Description:** \nIntroduces the first and second laws of thermodynamics, basic thermodynamic properties, simple systems, energy transformations, and entropy concepts. \n**Prerequisites:** PHYS 130 (General Physics I); MATH 121 (Calculus II)",
+        "source": "dept_of_Mechanical_Catalog.md"
+      },
+      {
+        "text": "Prerequisites such as PHYS 130 and MATH 121 are required for MECH 231 because understanding the principles of thermodynamics relies heavily on concepts like energy transformations and various mathematical calculations to model physical systems accurately, which are covered extensively in Physics I and Calculus II.",
+        "source": "dept_of_Mechanical_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "How can a student enroll in MECH 590 at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "### MECH 590: Research Seminar in Mechanical Engineering \n**Credits:** 1 \n**Description:** \nWeekly seminars on current research topics in mechanical engineering. Participation in research discussions and presentations by faculty and guest speakers. \n**Prerequisites:** Graduate standing in Mechanical Engineering",
+        "source": "dept_of_Mechanical_Catalog.md"
+      },
+      {
+        "text": "To enroll in MECH 590, a student must have graduate standing in Mechanical Engineering. They should consult the Academic Advising Office or the Department of Mechanical Engineering for guidance on enrollment procedures.",
+        "source": "dept_of_Mechanical_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "What is the History of Cendara University's sports program?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University is proud to offer a vibrant sports program that encourages student engagement, teamwork, and excellence both on and off the field. Our university hosts a wide range of competitive varsity teams, popular intramural leagues, and accessible recreational opportunities for the entire campus community.",
+        "source": "sports_programs.md"
+      }
+    ]
+  },
+  {
+    "query": "Does Cendara University have a women's soccer team?",
+    "supporting_facts": [
+      {
+        "text": "### Women’s Teams\n\n| Team | Head Coach | Practice Location | Recent Achievement |\n|--------------------------|--------------------|--------------------------|------------------------------|\n| Soccer | Maeve Donnelly | Thorndale Field | 2024 Regional Finalists |",
+        "source": "sports_programs.md"
+      }
+    ]
+  },
+  {
+    "query": "When do varsity tryouts begin at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "## How to Get Involved\n\n- **Varsity Tryouts**: Begin the last week of August; applications open June 15 each year on the Athletics Department website.",
+        "source": "sports_programs.md"
+      }
+    ]
+  },
+  {
+    "query": "How Do Men’s and Women’s Basketball Achievements Compare at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "### Men’s Teams\n\n| Team | Head Coach | Practice Location | Recent Achievement |\n|--------------------------|--------------------|--------------------------|---------------------------------|\n| Basketball | Marcus Elliott | Harvell Arena | 2023 Central League Champions |\n\n### Women’s Teams\n\n| Team | Head Coach | Practice Location | Recent Achievement |\n|--------------------------|--------------------|--------------------------|------------------------------|\n| Basketball | Natalia Rocha | Harvell Arena | Playoff Appearance, 2024 |",
+        "source": "sports_programs.md"
+      }
+    ]
+  },
+  {
+    "query": "How can I join a sports club at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "## How to Get Involved\n\n- **Sports Club Memberships**: Join by attending the annual Activities Fair (September) or emailing club officers directly.",
+        "source": "sports_programs.md"
+      }
+    ]
+  },
+  {
+    "query": "What is the history of Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University was established in the spring of 1956 by Dr. Franklin M. Avery as Cendara College with 87 students and 12 faculty members. The institution was initially housed in a restored municipal building on East Willow Avenue.",
+        "source": "university_overview.md"
+      },
+      {
+        "text": "In 1964, it achieved university status and expanded its campus. Key milestones include the launch of graduate programs in 1971, adoption of the Inclusivity Pact in 1985, opening the Center for Global Studies in 1998, and a significant sustainability initiative starting in 2007.",
+        "source": "university_overview.md"
+      },
+      {
+        "text": "The university celebrated its Diamond Jubilee in 2016, adapted to COVID-19 challenges in 2021, and established the Center for Interdisciplinary Innovation in 2023.",
+        "source": "university_overview.md"
+      }
+    ]
+  },
+  {
+    "query": "How do the core values of Cendara University differ from its educational philosophy?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University's core values focus on overarching principles such as integrity, diversity, and student-centeredness, guiding all decisions and policies.",
+        "source": "university_overview.md"
+      },
+      {
+        "text": "In contrast, its educational philosophy emphasizes the methodology of education, centering on interdisciplinary collaboration, active learning, and personalized guidance.",
+        "source": "university_overview.md"
+      }
+    ]
+  },
+  {
+    "query": "What major milestone did Cendara University achieve in 1971?",
+    "supporting_facts": [
+      {
+        "text": "In 1971, Cendara University launched its first graduate programs with the introduction of Master’s degrees in Biology and Education and opened the Graduate Research Center.",
+        "source": "university_overview.md"
+      }
+    ]
+  },
+  {
+    "query": "Why is community engagement a core value at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Community engagement is vital at Cendara University as it seeks to partner with local, national, and global communities for societal betterment. This aligns with its purpose of serving as a catalyst for positive economic, cultural, and social change.",
+        "source": "university_overview.md"
+      }
+    ]
+  },
+  {
+    "query": "How does Cendara University support student adaptability and continuous learning?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University supports student adaptability through its educational philosophy, emphasizing lifelong learning and resilience. The curriculum encourages students to navigate societal changes confidently and pursue continuous self-improvement.",
+        "source": "university_overview.md"
+      }
+    ]
+  },
+  {
+    "query": "What courses are offered in the undergraduate History program at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "## Undergraduate Courses (B.A. in History)\n### HIST 101: Foundations of World History \n### HIST 115: Introduction to Historical Methods \n### HIST 201: History of the United States to 1877 \n### HIST 213: Modern European History, 1789–Present \n### HIST 225: History of East Asia \n### HIST 320: Public History: Theory and Practice \n### HIST 330: Gender in World History \n### HIST 350: The Historian’s Craft \n### HIST 390: Special Topics in History \n### HIST 495: Senior Seminar in History",
+        "source": "dept_of_History_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "How is HIST 321 different from HIST 213 in their course content?",
+    "supporting_facts": [
+      {
+        "text": "### HIST 213: Modern European History, 1789–Present\nAn analysis of major political, social, and cultural developments in Europe since the French Revolution. Topics include nationalism, industrialization, the world wars, the Cold War, and the European Union.\n### HIST 321: Seminar in Early Modern History\nEmphasis on comparative empire studies, religious reforms, and scientific revolutions.",
+        "source": "dept_of_History_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "Why might a student choose to take HIST 330: Gender in World History?",
+    "supporting_facts": [
+      {
+        "text": "### HIST 330: Gender in World History\nA comparative study of gender roles and identities in various global societies from antiquity to the present. Includes examinations of family, labor, law, and cultural representations. This course would appeal to students interested in understanding historical gender roles and their impact on current societal norms.",
+        "source": "dept_of_History_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "How can a graduate student prepare for HIST 610: Advanced Research Seminar?",
+    "supporting_facts": [
+      {
+        "text": "### HIST 610: Advanced Research Seminar\nDesigned for students preparing thesis or dissertation projects. Students should ensure they have completed 18 graduate credit hours in History, including HIST 505 and HIST 511, to engage effectively in presenting their research and participating in methodological discussions.",
+        "source": "dept_of_History_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "How do I register for the entrance exam at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "### 2. Register for the Exam\n\n- Log into MyCendara at [my.cendara.edu](https://my.cendara.edu).\n- Navigate to the “Entrance Exams” section under the Applicant Dashboard.\n- Select your required exam(s) and preferred examination session.\n- Review and confirm testing accommodations if applicable (see Accessibility Services below).",
+        "source": "entrance_exxam_guidelines.md"
+      }
+    ]
+  },
+  {
+    "query": "Which programs at Cendara University require an entrance exam?",
+    "supporting_facts": [
+      {
+        "text": "### Which Programs Require Entrance Exams?\n\n- **School of Health Sciences** \n *Bachelor of Science in Nursing, Bachelor of Public Health* \n - Science Aptitude Exam (required for all first-time applicants)\n- **School of Engineering and Applied Sciences** \n *Bachelor of Engineering, Computer Science Major* \n - Mathematics Proficiency Exam (required for all direct-entry applicants)\n- **Honors College** \n - Critical Reasoning Essay (for applicants seeking admission to Honors College)\n- **Graduate School** \n - Program-specific subject exams as required by departmental guidelines (e.g., Psychology GRE Subject for MA in Psychology)",
+        "source": "entrance_exxam_guidelines.md"
+      }
+    ]
+  },
+  {
+    "query": "When are the main sessions for the Mathematics Proficiency Exam scheduled?",
+    "supporting_facts": [
+      {
+        "text": "| Exam Type | Main Session 1 | Main Session 2 | Format | Location |\n|---------------------------------|---------------------|---------------------|---------------|--------------------------------|\n| Mathematics Proficiency Exam | May 17, 2024 | July 13, 2024 | Computer-based| Pearson Computer Lab A |",
+        "source": "entrance_exxam_guidelines.md"
+      }
+    ]
+  },
+  {
+    "query": "Why does Cendara University administer entrance examinations for certain programs?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University administers entrance examinations for select undergraduate and graduate academic programs to ensure a high standard of academic readiness and to appropriately place students in courses aligned with their skill levels. While most degree programs do not require a standardized university-wide entrance exam, certain competitive majors, specialized scholarship pathways, and direct-entry professional tracks require subject-based or aptitude testing.",
+        "source": "entrance_exxam_guidelines.md"
+      }
+    ]
+  },
+  {
+    "query": "What courses are included in the Bachelor of Education program at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "The Bachelor of Education (B.Ed.) in Elementary Education program includes courses such as EDUC 1101: Foundations of Education, EDUC 1202: Child Development and Learning, EDUC 1303: Curriculum Design for Elementary Classrooms, EDUC 1404: Literacy Instruction I, EDUC 1505: Mathematics for Elementary Teachers, EDUC 2106: Classroom Assessment and Evaluation, EDUC 2207: Literacy Instruction II, EDUC 2308: Science and Social Studies Methods, EDUC 3109: Inclusive Classrooms and Special Needs Education, EDUC 3110: Classroom Management, EDUC 4201: Student Teaching Seminar, and EDUC 4202: Student Teaching Practicum.",
+        "source": "dept_of_Curriclumn_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "Why is EDUC 1101 a prerequisite for some of the advanced courses in the B.Ed. program?",
+    "supporting_facts": [
+      {
+        "text": "EDUC 1101: Foundations of Education provides an introduction to the philosophy, history, and social context of elementary education, covering educational theories and current issues. This foundational knowledge is critical for understanding more advanced topics in curriculum design, literacy instruction, and mathematics education, making it a prerequisite for courses such as EDUC 1303 and EDUC 1505.",
+        "source": "dept_of_Curriclumn_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "How do I enroll in the Master of Education program at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "To enroll in the Master of Education (M.Ed.) program, you must first gain admission to the program. Courses like EDCI 5001: Contemporary Issues in Curriculum & Instruction indicate that admission to the M.Ed. program is required, suggesting that you follow the university's application process for graduate programs.",
+        "source": "dept_of_Curriclumn_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "How does the Curriculum Design course differ between the B.Ed. and M.Ed. programs?",
+    "supporting_facts": [
+      {
+        "text": "In the B.Ed. program, EDUC 1303: Curriculum Design for Elementary Classrooms focuses on developing lesson plans and curricular units aligned with state and national standards. Conversely, in the M.Ed. program, EDCI 5203: Curriculum Development and Evaluation emphasizes systematic approaches to designing, implementing, and assessing curricula using quantitative and qualitative methods.",
+        "source": "dept_of_Curriclumn_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "What topics are covered in EDCI 6106: Cultural Competence and Equity in Education?",
+    "supporting_facts": [
+      {
+        "text": "EDCI 6106 covers approaches to fostering inclusive and equitable learning environments. The course includes topics such as anti-bias education and culturally responsive pedagogy, aiming to enhance cultural competence in educational settings.",
+        "source": "dept_of_Curriclumn_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "What is Cendara University's fee structure for 2024–2025?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University provides a transparent overview of costs for the academic year 2024–2025. This applies to domestic and international students, with fees varying based on program, housing, dining, and course load.",
+        "source": "fee_structure.md"
+      },
+      {
+        "text": "The university offers specific tuition ranges for various degrees, such as Bachelor of Arts/Science/Engineering ($24,000 – $29,000) and Doctor of Philosophy ($16,500 – $23,000). Additional fees include student activities, technology, and health services. Housing and meal plan costs are also detailed, along with other potential expenses.",
+        "source": "fee_structure.md"
+      }
+    ]
+  },
+  {
+    "query": "How does the tuition for undergraduate vs. graduate programs at Cendara University differ?",
+    "supporting_facts": [
+      {
+        "text": "For undergraduate programs like Bachelor of Arts/Science/Engineering, the annual tuition ranges from $24,000 to $29,000. In contrast, graduate programs such as Master of Arts/Science/Engineering have lower annual tuition, ranging from $13,500 to $18,200.",
+        "source": "fee_structure.md"
+      },
+      {
+        "text": "Graduate certificate programs are priced differently, with annual costs between $9,800 and $12,500 per certificate. These differences highlight a generally lower tuition rate for graduate studies compared to undergraduate programs.",
+        "source": "fee_structure.md"
+      }
+    ]
+  },
+  {
+    "query": "How can a student inquire about financial aid at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Scholarships, grants, and financial aid are available at Cendara University. Students should contact the Office of Financial Assistance to check eligibility.",
+        "source": "fee_structure.md"
+      },
+      {
+        "text": "For questions related to campus fees or financial matters, students should direct inquiries to bursar@cendara.edu or refer to the Cendara University Student Accounts Handbook.",
+        "source": "fee_structure.md"
+      }
+    ]
+  },
+  {
+    "query": "What options does Cendara University offer for student housing?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University offers several on-campus housing options. These include traditional double rooms ($5,400 – $6,800), single private rooms ($7,200 – $9,100), suite-style accommodations ($8,600 – $10,400), and apartments for upperclass and graduate students ($9,800 – $12,250).",
+        "source": "fee_structure.md"
+      },
+      {
+        "text": "All campus housing includes utilities and internet. Off-campus housing is limited but available, with costs ranging from $450 to $950 per month per person.",
+        "source": "fee_structure.md"
+      }
+    ]
+  },
+  {
+    "query": "Are there mandatory fees in addition to tuition at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Yes, there are mandatory fees assessed in addition to tuition at Cendara University. These fees support various student services such as activities, technology, health services, and libraries.",
+        "source": "fee_structure.md"
+      },
+      {
+        "text": "Examples include the Student Activities Fee ($350 – $500) and the Technology Fee ($250 – $400), among others.",
+        "source": "fee_structure.md"
+      }
+    ]
+  },
+  {
+    "query": "What courses are available for a B.B.A. in Management at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "The Department of Management offers a comprehensive suite of undergraduate (B.B.A.) courses. Below is the complete listing of all Management courses, along with course descriptions, prerequisites, and credit hours.",
+        "source": "dept_of_Management_Catalog.md"
+      },
+      {
+        "text": "Courses include MGMT 101: Principles of Management, MGMT 112: Organizational Behavior, MGMT 124: Business Communications, MGMT 203: Human Resource Management, MGMT 217: Operations Management, MGMT 230: Business Ethics and Corporate Social Responsibility, MGMT 251: Entrepreneurship and Innovation, MGMT 272: Strategic Management, MGMT 280: International Business Management, and MGMT 299: Management Internship.",
+        "source": "dept_of_Management_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "How does MGMT 112 differ from MGMT 203 in terms of content and prerequisites?",
+    "supporting_facts": [
+      {
+        "text": "MGMT 112: Organizational Behavior explores psychological and sociological principles underlying individual and group behavior in organizations, with topics including motivation, leadership styles, and team dynamics. Prerequisite: MGMT 101.",
+        "source": "dept_of_Management_Catalog.md"
+      },
+      {
+        "text": "MGMT 203: Human Resource Management examines key HR functions like recruitment, selection, and performance appraisal, addressing challenges in managing a diverse workforce. Prerequisite: MGMT 101.",
+        "source": "dept_of_Management_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "What are the prerequisites for the M.B.A. course MGMT 512: Executive Leadership?",
+    "supporting_facts": [
+      {
+        "text": "MGMT 512: Executive Leadership has the prerequisite of MGMT 501: Advanced Management Theory, which involves an in-depth analysis of classical and contemporary management theories.",
+        "source": "dept_of_Management_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "When is the current course catalog at Cendara University applicable?",
+    "supporting_facts": [
+      {
+        "text": "The course catalog is for the academic year 2024–2025.",
+        "source": "dept_of_Management_Catalog.md"
+      },
+      {
+        "text": "Notes state that for course schedule details, one should check the current schedule available on the Cendara University portal.",
+        "source": "dept_of_Management_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "How do I enroll in a course that requires departmental approval at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "For enrollment in courses marked “departmental approval,” contact the department office at management@cendara.edu.",
+        "source": "dept_of_Management_Catalog.md"
+      },
+      {
+        "text": "It’s advised to consult with your academic advisor in the Department of Management for course planning and further details.",
+        "source": "dept_of_Management_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "What undergraduate courses does the Department of Chemistry offer?",
+    "supporting_facts": [
+      {
+        "text": "The Department of Chemistry at Cendara University offers a variety of undergraduate courses for the academic year 2024–2025, including CHEM 101: General Chemistry I, CHEM 102: General Chemistry II, CHEM 201: Organic Chemistry I, CHEM 202: Organic Chemistry II, CHEM 205: Analytical Chemistry, CHEM 210: Inorganic Chemistry I, CHEM 301: Physical Chemistry I, CHEM 302: Physical Chemistry II, CHEM 320: Instrumental Methods of Analysis, CHEM 350: Biochemistry, CHEM 401: Advanced Inorganic Chemistry, CHEM 410: Research Methods in Chemistry, and CHEM 495: Senior Thesis.",
+        "source": "dept_of_Chemistry_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "How do undergraduate and graduate chemistry courses differ at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Undergraduate courses, such as CHEM 101 through CHEM 495, focus on foundational chemistry topics and laboratory skills, while the graduate courses like CHEM 511, 521, and 699 emphasize advanced topics, including complex synthesis, spectroscopic methods, computational chemistry, and original research culminating in a master's thesis.",
+        "source": "dept_of_Chemistry_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "What are the prerequisites for enrolling in CHEM 202: Organic Chemistry II?",
+    "supporting_facts": [
+      {
+        "text": "To enroll in CHEM 202: Organic Chemistry II, students must have completed CHEM 201: Organic Chemistry I.",
+        "source": "dept_of_Chemistry_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "Why might a student choose to take CHEM 205: Analytical Chemistry?",
+    "supporting_facts": [
+      {
+        "text": "A student may choose to take CHEM 205: Analytical Chemistry to gain a comprehensive understanding of quantitative chemical analysis methods, such as gravimetric, volumetric, and instrumental techniques. The course provides laboratory experience with titrations, spectrophotometry, and chromatography, essential for analytical skills in various chemistry careers.",
+        "source": "dept_of_Chemistry_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "What is the academic year for the courses listed in the Department of Chemistry?",
+    "supporting_facts": [
+      {
+        "text": "The courses in the Department of Chemistry are offered for the academic year 2024–2025.",
+        "source": "dept_of_Chemistry_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "What is the professional development policy at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University's Professional Development Policy focuses on the ongoing professional and academic growth of its faculty and staff, outlining training opportunities, conference attendance, and support for continuing education to foster a skilled workforce. It applies to all full-time and part-time staff.",
+        "source": "professional_development_policy.md"
+      }
+    ]
+  },
+  {
+    "query": "How can an employee apply for conference funding at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "To apply for conference funding, employees must complete the Conference Funding Application form and submit it to the Office of Academic Affairs at least eight weeks prior to the event, including a conference agenda, statement of purpose, and estimated budget. Applications are reviewed monthly by the Professional Development Committee.",
+        "source": "professional_development_policy.md"
+      }
+    ]
+  },
+  {
+    "query": "When is the review date for Cendara University's Professional Development Policy?",
+    "supporting_facts": [
+      {
+        "text": "The review date for Cendara University's Professional Development Policy is September 1, 2026.",
+        "source": "professional_development_policy.md"
+      }
+    ]
+  },
+  {
+    "query": "Why does Cendara University prioritize leadership development?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University offers annual leadership programs to support aspiring department chairs and administrative leaders, promoting a culture of leadership and ensuring effective management across departments, thus aligning with its mission of educational excellence.",
+        "source": "professional_development_policy.md"
+      }
+    ]
+  },
+  {
+    "query": "Is the Professional Development Committee responsible for reviewing funding applications?",
+    "supporting_facts": [
+      {
+        "text": "Yes, the Professional Development Committee is responsible for reviewing funding applications, monitoring policy application, and evaluating annual development needs.",
+        "source": "professional_development_policy.md"
+      }
+    ]
+  },
+  {
+    "query": "“How do FINA 210 and FINA 321 differ in their focus?”",
+    "supporting_facts": [
+      {
+        "text": "### FINA 210: Investment Analysis\nExamination of investment vehicles, portfolio construction, securities analysis, and risk management strategies.\n\n- **Prerequisites:** FINA 201 \n- **Credit Hours:** 3",
+        "source": "dept_of_Finance_Catalog.md"
+      },
+      {
+        "text": "### FINA 321: Derivatives and Risk Management\nSurvey of derivatives markets and instruments such as options, futures, and swaps, with exploration of hedging and speculation strategies.\n\n- **Prerequisites:** FINA 210 \n- **Credit Hours:** 3",
+        "source": "dept_of_Finance_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "“How can students enroll in upper-level finance courses?”",
+    "supporting_facts": [
+      {
+        "text": "**Note:** Some upper-level courses may only be offered in alternate semesters. For further details on course scheduling and academic advising, contact the Department of Finance and Accounting at fina.office@cendara.edu.",
+        "source": "dept_of_Finance_Catalog.md"
+      },
+      {
+        "text": "Many upper-level courses have prerequisites such as completion of FINA 101 and FINA 201.",
+        "source": "dept_of_Finance_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "“What is covered in the course FINA 340?”",
+    "supporting_facts": [
+      {
+        "text": "### FINA 340: Ethics and Professional Standards in Finance\nExamination of ethical issues and professional responsibilities in the finance profession, including conflicts of interest, fiduciary duty, regulatory compliance, and global standards for ethical conduct.\n\n- **Prerequisites:** FINA 201 \n- **Credit Hours:** 2",
+        "source": "dept_of_Finance_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "“Why might FINA 480 be considered a vital course for finance majors?”",
+    "supporting_facts": [
+      {
+        "text": "### FINA 480: Seminar in Contemporary Financial Issues\nCapstone seminar critically examining current topics and emerging trends in finance, including fintech, environmental finance, and market regulation. Includes guest speakers and case studies.\n\n- **Prerequisites:** FINA 401 or Instructor Approval \n- **Credit Hours:** 3",
+        "source": "dept_of_Finance_Catalog.md"
+      },
+      {
+        "text": "This course is crucial as it provides students with up-to-date knowledge on emerging trends, enhancing their understanding of real-world financial issues.",
+        "source": "dept_of_Finance_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "What is the history of the Cendara Debate Society?",
+    "supporting_facts": [
+      {
+        "text": "The Cendara Debate Society was founded in 1995 and provides a forum for students passionate about argumentation, rhetoric, and current affairs. Members participate in inter-university competitions and host annual debate workshops for local high schools.",
+        "source": "cocurricular_acitivities.md"
+      }
+    ]
+  },
+  {
+    "query": "How can a student join a club at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Interested students can sign up via the Office of Student Life portal or at the Club Fair. Most clubs welcome new members year-round. For details, contact studentlife@cendara.edu or visit the Student Center Room 102.",
+        "source": "cocurricular_acitivities.md"
+      }
+    ]
+  },
+  {
+    "query": "How does the Engineering Makers Club differ from the Literary Arts Collective at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "The Engineering Makers Club supports student-led engineering projects, hackathons, and innovation challenges, focusing on robotics, renewable energy, and software development.",
+        "source": "cocurricular_acitivities.md"
+      },
+      {
+        "text": "The Literary Arts Collective nurtures creative writers, poets, and artists with activities like weekly writing prompts, open mic nights, and the publication of “The Cendara Review.”",
+        "source": "cocurricular_acitivities.md"
+      }
+    ]
+  },
+  {
+    "query": "When is the “Cultures of Cendara” Festival scheduled to occur?",
+    "supporting_facts": [
+      {
+        "text": "The “Cultures of Cendara” Festival is an annual event organized by the International Students’ Association, scheduled for April 19, 2024.",
+        "source": "cocurricular_acitivities.md"
+      }
+    ]
+  },
+  {
+    "query": "Why might the Environmental Action Network partner with local non-profits for tree planting and river restoration?",
+    "supporting_facts": [
+      {
+        "text": "The Environmental Action Network collaborates to promote sustainability and educate peers about environmental issues. Partnering with local non-profits for tree planting and river restoration aligns with their mission to engage students in impactful environmental action and community service.",
+        "source": "cocurricular_acitivities.md"
+      }
+    ]
+  },
+  {
+    "query": "What undergraduate specializations are offered in the Department of Economics at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Specializations: Macroeconomics, Econometrics, International Economics",
+        "source": "dept_of_Economics_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "How can I find more information about the courses offered by the Department of Economics?",
+    "supporting_facts": [
+      {
+        "text": "For additional information, please contact the Department of Economics at economics@cendara.edu, or consult the full course catalog at [www.cendara.edu/economics/courses](http://www.cendara.edu/economics/courses).",
+        "source": "dept_of_Economics_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "Why might a student choose to take ECON 270: Development Economics?",
+    "supporting_facts": [
+      {
+        "text": "ECON 270: Development Economics focuses on economic development in low- and middle-income countries. The course emphasizes poverty, inequality, population growth, and policy strategies for promoting sustainable development. It requires ECON 102 as a prerequisite, making it an insightful choice for those interested in understanding and addressing global development challenges.",
+        "source": "dept_of_Economics_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "How does ECON 221: Introduction to Econometrics differ from ECON 530: Econometric Theory and Methods?",
+    "supporting_facts": [
+      {
+        "text": "ECON 221: Introduction to Econometrics offers statistical techniques in estimating economic models with regression analysis, hypothesis testing, and forecasting, with practical applications. It requires ECON 210 as a prerequisite.",
+        "source": "dept_of_Economics_Catalog.md"
+      },
+      {
+        "text": "ECON 530: Econometric Theory and Methods involves advanced methods in estimation, hypothesis testing, time series analysis, and panel data models. It requires ECON 221 and undergraduate-level statistics as prerequisites, indicating a more advanced, theory-driven approach tailored for graduate students.",
+        "source": "dept_of_Economics_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "Does ECON 310: Public Finance require ECON 201 as a prerequisite?",
+    "supporting_facts": [
+      {
+        "text": "Yes, ECON 310: Public Finance requires ECON 201 as a prerequisite.",
+        "source": "dept_of_Economics_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "What buildings make up the academic area of Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "| Name | Abbreviation | Location | Departments/Offices |\n|-------------------------------|--------------|-----------------|-------------------------------------------------------|\n| Ivory Academic Hall | IVH | Central Quad | Mathematics, Philosophy, Academic Advising |\n| Harrow Science Complex | HSC | Science Drive | Biology, Chemistry, Physics, Science Labs |\n| Calderwood Engineering Center | CEC | West Avenue | Civil, Mechanical, Electrical Engineering |\n| Sylvan Library & Archives | SLA | Library Lane | Library Services, Special Collections, Study Spaces |\n| Lorraine Arts & Media Building | LAM | East Promenade | Fine Arts, Media Studies, Art Galleries |\n| Farrow Business Pavilion | FBP | Commerce Circle | Business, Marketing, Finance, Student Entrepreneur Hub|\n| Bramley Social Sciences Block | BSS | North Quad | Psychology, Sociology, Political Science |",
+        "source": "campus_map.md"
+      }
+    ]
+  },
+  {
+    "query": "How can I access the campus map for Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "For a detailed illustrated map, printed copies are available at the Admissions Office (Walker Administration Building, Room 102), or download the interactive campus map from [www.cendara.edu/campusmap](http://www.cendara.edu/campusmap).",
+        "source": "campus_map.md"
+      }
+    ]
+  },
+  {
+    "query": "Is there an emergency phone station outside the Sylvan Library & Archives?",
+    "supporting_facts": [
+      {
+        "text": "Blue Light Emergency Telephones are strategically installed across campus.\n| Station ID | Location | Nearby Landmark |\n|------------|--------------------|-----------------------|\n| E-1 | Library Entrance | SLA |",
+        "source": "campus_map.md"
+      }
+    ]
+  },
+  {
+    "query": "How do the facilities in Evergreen Residence Hall differ from Willow Hall?",
+    "supporting_facts": [
+      {
+        "text": "| Name | Location | Capacity | Features |\n|--------------------------|-------------------|----------|------------------------------------------|\n| Evergreen Residence Hall | North Crescent | 400 | Double rooms, communal kitchen, study lounge |\n| Willow Hall | East Lawn | 350 | Suite-style, fitness center, laundry |",
+        "source": "campus_map.md"
+      }
+    ]
+  },
+  {
+    "query": "When do the Fall 2024 classes officially start at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "| August 26, 2024 | First Day of Classes |",
+        "source": "academic_calendar.md"
+      }
+    ]
+  },
+  {
+    "query": "How do I apply for graduation in Spring 2025 at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "| January 17, 2025 | Last Day to Apply for Spring 2025 Graduation |",
+        "source": "academic_calendar.md"
+      }
+    ]
+  },
+  {
+    "query": "What is the winter break schedule for Cendara University in 2024-2025?",
+    "supporting_facts": [
+      {
+        "text": "| December 14, 2024 – January 5, 2025 | Winter Break (University Offices Closed December 21 – January 1) |",
+        "source": "academic_calendar.md"
+      }
+    ]
+  },
+  {
+    "query": "Is Cendara University closed on Martin Luther King Jr. Day in 2025?",
+    "supporting_facts": [
+      {
+        "text": "**Martin Luther King Jr. Day:** January 20, 2025 (Closed)",
+        "source": "academic_calendar.md"
+      }
+    ]
+  },
+  {
+    "query": "How does the spring break duration compare to the midterm break at Cendara University in 2025?",
+    "supporting_facts": [
+      {
+        "text": "| October 11 – 13, 2024 | Midterm Break (No Classes) |\n| March 17 – 21, 2025 | Spring Break (No Classes, University Offices Open March 17–19) |",
+        "source": "academic_calendar.md"
+      }
+    ]
+  },
+  {
+    "query": "What is the history behind Cendara University's accreditation?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University is a fully accredited higher education institution recognized nationally and internationally for its commitment to academic excellence, research innovation, and student support.",
+        "source": "accreditation_status.md"
+      },
+      {
+        "text": "Accredited by the Midland Commission on Colleges and Universities (MCCU) since August 15, 1968, with the most recent reaffirmation visit in March 2022. Accreditation is valid through June 2028.",
+        "source": "accreditation_status.md"
+      },
+      {
+        "text": "Programmatic accreditation details include Nursing by NCNE (2021–2029), MBA by IABS (2020–2027), Engineering by ABED (2018–2025), among others.",
+        "source": "accreditation_status.md"
+      }
+    ]
+  },
+  {
+    "query": "Why is Cendara University recognized internationally?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University is recognized internationally for its commitment to academic excellence, research innovation, and student support. It is accredited by recognized bodies such as the Midland Commission on Colleges and Universities and has exchange agreements with universities in Germany, Japan, and Brazil.",
+        "source": "accreditation_status.md"
+      },
+      {
+        "text": "Recognized by the International Federation of Universities (IFU) as a member institution in good standing, highlighting its global partnerships and credibility.",
+        "source": "accreditation_status.md"
+      }
+    ]
+  },
+  {
+    "query": "Is Cendara University licensed by the State?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University is licensed under the State of Eddington Higher Education Act, Section 312. It holds the current registration number: EDU-340182.",
+        "source": "accreditation_status.md"
+      }
+    ]
+  },
+  {
+    "query": "How can I access Cendara University’s accreditation documents?",
+    "supporting_facts": [
+      {
+        "text": "Official documentation and detailed accreditation reports are available by request at the Office of Institutional Compliance, Founders Hall, Room 410, or by email at accreditation@cendara.edu.",
+        "source": "accreditation_status.md"
+      }
+    ]
+  },
+  {
+    "query": "When was Cendara University's nursing program accredited as a Center of Excellence?",
+    "supporting_facts": [
+      {
+        "text": "In 2021, the Nursing program at Cendara University was awarded “Center of Excellence in Nursing Education” by the National Council for Nursing Education (NCNE).",
+        "source": "accreditation_status.md"
+      }
+    ]
+  },
+  {
+    "query": "How do I contact the Office of Admissions at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "| Office of Admissions | (781) 555-1010 | admissions@cendara.edu | Walters Hall, Room 120 | Mon–Fri, 8:30am–5:00pm |",
+        "source": "contact_information.md"
+      }
+    ]
+  },
+  {
+    "query": "What are the office hours for Cendara University's Library Reference Desk?",
+    "supporting_facts": [
+      {
+        "text": "| Library Reference Desk | (781) 555-1111 | library@cendara.edu | Whitaker Library, Ground Floor | Mon–Sun, 8:00am–10:00pm |",
+        "source": "contact_information.md"
+      }
+    ]
+  },
+  {
+    "query": "How do the contact options differ between the School of Engineering and the School of Business and Economics at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "- **School of Engineering** \n (781) 555-1310 | engineering@cendara.edu",
+        "source": "contact_information.md"
+      },
+      {
+        "text": "- **School of Business and Economics** \n (781) 555-1410 | business@cendara.edu",
+        "source": "contact_information.md"
+      }
+    ]
+  },
+  {
+    "query": "What departments have 24/7 availability at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "| Campus Security | (781) 555-1120 | security@cendara.edu | Security Pavilion, South Quad | 24/7 |",
+        "source": "contact_information.md"
+      }
+    ]
+  },
+  {
+    "query": "What is the structure for the B.Sc. in Public Health program at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "The B.Sc. in Public Health program includes core required courses such as Introduction to Public Health, Global Health Perspectives, and Health Policy and Management, among others. Elective courses and concentration options in areas like Epidemiology and Health Policy are also available.",
+        "source": "dept_of_Public_Health.md"
+      },
+      {
+        "text": "### Core Required Courses \n#### PH 101 – Introduction to Public Health \n#### PH 110 – Global Health Perspectives \n#### PH 120 – Health Policy and Management \n#### PH 201 – Epidemiology I \n#### PH 215 – Biostatistics \n#### PH 230 – Environmental Health Science \n#### PH 260 – Health Promotion and Behavior \n#### PH 350 – Practicum in Public Health",
+        "source": "dept_of_Public_Health.md"
+      }
+    ]
+  },
+  {
+    "query": "How does the B.Sc. in Public Health differ from the M.Sc. in Public Health at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "The B.Sc. program includes core and elective courses aimed at foundational public health knowledge, while the M.Sc. program focuses on advanced topics such as Methods in Population Health Research and Advanced Epidemiology. The M.Sc. program also requires a thesis.",
+        "source": "dept_of_Public_Health.md"
+      },
+      {
+        "text": "### B.Sc. in Public Health \n#### Core Courses include Introduction to Public Health, Epidemiology I, and Health Promotion and Behavior.\n\n### M.Sc. in Public Health \n#### Core Graduate Courses include Methods in Population Health Research and Health Informatics. Thesis Research Seminar is also a component.",
+        "source": "dept_of_Public_Health.md"
+      }
+    ]
+  },
+  {
+    "query": "How do I apply to the M.Sc. in Public Health program at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Additional information about the program can be found by consulting academic advisors for optimal course sequencing. Questions regarding the application process should be directed to the Public Health Office or science.advising@cendara.edu.",
+        "source": "dept_of_Public_Health.md"
+      },
+      {
+        "text": "The Department of Public Health encourages reaching out to the Public Health Office, Cendara University, or using the contact email science.advising@cendara.edu for specific queries on application procedures.",
+        "source": "dept_of_Public_Health.md"
+      }
+    ]
+  },
+  {
+    "query": "What are some topics covered in the core graduate courses for the M.Sc. in Public Health?",
+    "supporting_facts": [
+      {
+        "text": "Core graduate courses include Methods in Population Health Research, Advanced Epidemiology, and Health Informatics. Topics cover quantitative and qualitative methods, epidemiologic theory, and health information systems.",
+        "source": "dept_of_Public_Health.md"
+      },
+      {
+        "text": "#### PH 501 – Methods in Population Health Research \n#### PH 510 – Advanced Epidemiology \n#### PH 520 – Health Informatics",
+        "source": "dept_of_Public_Health.md"
+      }
+    ]
+  },
+  {
+    "query": "What are the core values and mission of Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University fosters inquiry, lifelong learning, and civic engagement. We empower our community members to pursue excellence, innovation, and global citizenship.",
+        "source": "employee_handbook.md"
+      },
+      {
+        "text": "**Core Values:**\n- Academic integrity and freedom\n- Respect and inclusivity\n- Service and responsibility\n- Creativity and discovery",
+        "source": "employee_handbook.md"
+      }
+    ]
+  },
+  {
+    "query": "How do I apply for flexible scheduling at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University supports a hybrid work environment for eligible positions:\n- **Flexible schedules:** (e.g., adjusted start/end times) available based on departmental needs.\n- Submit requests in writing to immediate supervisors; approvals are assessed case-by-case.",
+        "source": "employee_handbook.md"
+      }
+    ]
+  },
+  {
+    "query": "Why might Cendara University emphasize diversity and inclusion?",
+    "supporting_facts": [
+      {
+        "text": "Diversity is integral to our academic mission.",
+        "source": "employee_handbook.md"
+      },
+      {
+        "text": "The Mosaic Initiative advances equity for underrepresented groups in faculty and student recruitment.",
+        "source": "employee_handbook.md"
+      },
+      {
+        "text": "Monthly “Voices Forum” discussions and annual Diversity Symposium.",
+        "source": "employee_handbook.md"
+      }
+    ]
+  },
+  {
+    "query": "How does Cendara University's Employee Assistance Program differ from its Retirement Plan?",
+    "supporting_facts": [
+      {
+        "text": "**Employee Assistance Program (EAP):**\n- Free, confidential counseling (up to 6 sessions per year).\n- Financial consulting, legal assistance, and support resources for all employees and families.",
+        "source": "employee_handbook.md"
+      },
+      {
+        "text": "**Retirement Plan:**\n- Participation in the Cendara University Retirement Savings Plan (CURSP) is automatic after 90 days of employment.\n- University matches employee contributions up to 6% of salary.\n- Administered by Granite Financial Services.",
+        "source": "employee_handbook.md"
+      }
+    ]
+  },
+  {
+    "query": "What courses does Cendara University offer in its Psychology Department for undergraduates?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University’s Department of Psychology offers several undergraduate courses, including PSY 101: Introduction to Psychology, PSY 110: Research Methods in Psychology, PSY 211: Developmental Psychology, PSY 218: Introduction to Cognitive Psychology, PSY 230: Social Psychology, PSY 250: Abnormal Psychology, PSY 312: Biological Bases of Behavior, PSY 320: Introduction to Clinical Psychology, PSY 340: Personality Psychology, PSY 370: Psychological Statistics, and PSY 399: Independent Study in Psychology.",
+        "source": "dept_of_Psychology_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "How can an undergraduate student enroll in PSY 110: Research Methods in Psychology?",
+    "supporting_facts": [
+      {
+        "text": "To enroll in PSY 110: Research Methods in Psychology at Cendara University, an undergraduate student must first complete the prerequisite course, PSY 101: Introduction to Psychology. Students should then register for the course through the university's course portal, subject to availability and departmental consent.",
+        "source": "dept_of_Psychology_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "How does the focus of PSY 312: Biological Bases of Behavior differ from PSY 340: Personality Psychology?",
+    "supporting_facts": [
+      {
+        "text": "PSY 312: Biological Bases of Behavior focuses on the neural and hormonal foundations of behavior, sensation, and motivation, emphasizing the connections between biological mechanisms and psychological processes. In contrast, PSY 340: Personality Psychology explores classical and contemporary theories of personality, methods of assessment, and research findings. While PSY 312 deals more with biological aspects, PSY 340 concentrates on theoretical and assessment aspects of personality.",
+        "source": "dept_of_Psychology_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "What prerequisites are required for PSY 550: Interventions in Clinical Psychology, and why might they be necessary?",
+    "supporting_facts": [
+      {
+        "text": "PSY 550: Interventions in Clinical Psychology requires the prerequisites PSY 532: Psychopathology and PSY 540: Psychological Assessment. These prerequisites are necessary because they provide foundational knowledge of psychological disorders and assessment practices, which are critical for understanding and applying psychotherapeutic interventions effectively in clinical settings.",
+        "source": "dept_of_Psychology_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "“How does Cendara University’s exchange program with Humboldt School of Technology differ from its program with Victoria State University?”",
+    "supporting_facts": [
+      {
+        "text": "| Partner Institution | Type of Collaboration |\n|---------------------|-----------------------|\n| Humboldt School | Student & Faculty Exchange |\n| Victoria State | Semester Abroad, Joint Research Funds |\n\nCendara has an exchange focused on engineering at Humboldt and a semester abroad with marine biology at Victoria State.",
+        "source": "student_exchange_program.md"
+      }
+    ]
+  },
+  {
+    "query": "“How can Cendara University students apply for outbound exchange programs?”",
+    "supporting_facts": [
+      {
+        "text": "- Attend a mandatory Exchange Program Information Session (monthly, OIA Conference Room).\n- Consult with academic advisors for course and credit transfer planning.\n- Submit complete application and supporting materials (transcript, personal statement, recommendation letter) by **March 1 (Fall)** or **October 1 (Spring)**.",
+        "source": "student_exchange_program.md"
+      }
+    ]
+  },
+  {
+    "query": "“What types of academic networks is Cendara University involved in?”",
+    "supporting_facts": [
+      {
+        "text": "Cendara University is an active member of:\n\n- **Global Education Connect (GEC):** A network of 250+ universities fostering global teaching and learning innovation.\n- **Consortium for Sustainability R&D:** Focused on climate resilience and environmental sciences.\n- **Intercollegiate Language Partners (ILP):** Collaborative projects in translation, interpretation, and cross-cultural communication.",
+        "source": "student_exchange_program.md"
+      }
+    ]
+  },
+  {
+    "query": "“When did Cendara University initiate its affiliation with the Royal Institute of Social Sciences?”",
+    "supporting_facts": [
+      {
+        "text": "| Partner Institution | Year Initiated |\n|--------------------------------------------|----------------|\n| Royal Institute of Social Sciences | 2017 |",
+        "source": "student_exchange_program.md"
+      }
+    ]
+  },
+  {
+    "query": "“Can you describe the visiting scholars program at Cendara University?”",
+    "supporting_facts": [
+      {
+        "text": "The Visiting Scholars Program offers short-term residencies (2–12 months) for faculty and postdoctoral researchers affiliated with partner universities. Recent scholars include:\n\n- Dr. Hanae Sakamoto from East Asia University, Japan (Mar–Aug 2023)\n- Prof. Rohan Nambiar from Victoria State University (Jan–Jun 2024)\n- Dr. Inés Villalobos from Pontifica Universidad del Sur (Aug–Dec 2023)",
+        "source": "student_exchange_program.md"
+      }
+    ]
+  },
+  {
+    "query": "What is the course BIOL 101 about?",
+    "supporting_facts": [
+      {
+        "text": "An introduction to the fundamental concepts of biology, including cell structure, genetics, evolution, and ecology. Emphasis on the scientific method, laboratory research, and data analysis.",
+        "source": "dept_of_Biology_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "How does BIOL 115 differ from BIOL 318?",
+    "supporting_facts": [
+      {
+        "text": "BIOL 115 focuses on marine ecosystems, organismal diversity, ecological interactions, and adaptation with fieldwork in coastal environments.",
+        "source": "dept_of_Biology_Catalog.md"
+      },
+      {
+        "text": "BIOL 318 is an immersive field-based course covering marine organisms, habitats, and ecological monitoring techniques, including a week-long research trip to the Gulf of Cendara.",
+        "source": "dept_of_Biology_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "What are the prerequisites for taking BIOL 235?",
+    "supporting_facts": [
+      {
+        "text": "Prerequisites for BIOL 235 include BIOL 101.",
+        "source": "dept_of_Biology_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "What is the focus of the Conservation Biology specialization track for graduates?",
+    "supporting_facts": [
+      {
+        "text": "The Conservation Biology track for graduates focuses on theoretical and practical approaches to ecosystem restoration and conservation, emphasizing adaptive management, population viability analysis, and conservation policy, with core courses BIOL 540 and BIOL 390.",
+        "source": "dept_of_Biology_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "What topics does BIOL 501 cover in its curriculum?",
+    "supporting_facts": [
+      {
+        "text": "BIOL 501 offers an in-depth analysis of genetic mechanisms at the molecular level, including gene regulation, epigenetics, genomics, and CRISPR technologies with lab work on genome editing techniques.",
+        "source": "dept_of_Biology_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "How does the undergraduate program differ from the graduate program at Cendara University's Department of Computer Science?",
+    "supporting_facts": [
+      {
+        "text": "The undergraduate program offers tracks such as Software Engineering, Artificial Intelligence, and Cybersecurity, with foundational and specialized courses designed for a bachelor's degree.",
+        "source": "dept_of_Computer_Science_Catalog.md"
+      },
+      {
+        "text": "The graduate program focuses on advanced courses like Advanced Algorithms and Research Methods, designed for M.Sc./Ph.D. students, with a focus on in-depth studies and thesis research.",
+        "source": "dept_of_Computer_Science_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "How can I contact the Department of Computer Science at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "For more information about courses or degree requirements, please contact:\nDepartment of Computer Science \nCendara University \nEmail: cs-advising@cendara.edu \nPhone: +1 (845) 555-7812",
+        "source": "dept_of_Computer_Science_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "Why might a student choose the Artificial Intelligence track in the undergraduate program?",
+    "supporting_facts": [
+      {
+        "text": "The Artificial Intelligence track offers courses such as CS355: Artificial Intelligence Foundations and electives like CS441: Machine Learning, providing students with a strong foundation in AI and machine learning.",
+        "source": "dept_of_Computer_Science_Catalog.md"
+      },
+      {
+        "text": "These courses cover key topics such as search algorithms, knowledge representation, reasoning, and machine learning basics, appealing to those interested in pursuing careers in AI.",
+        "source": "dept_of_Computer_Science_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "Does the Department of Computer Science offer a course specifically on ethical hacking?",
+    "supporting_facts": [
+      {
+        "text": "Yes, the department offers **CS460: Ethical Hacking and Penetration Testing**, which covers techniques and tools used in ethical hacking and penetration testing in legal and ethical frameworks.",
+        "source": "dept_of_Computer_Science_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "What is the focus of the course CS210: Object-Oriented Programming?",
+    "supporting_facts": [
+      {
+        "text": "CS210 focuses on the principles of object-oriented programming using Java. Topics include classes, objects, inheritance, polymorphism, encapsulation, interfaces, and software design patterns.",
+        "source": "dept_of_Computer_Science_Catalog.md"
+      },
+      {
+        "text": "The course has prerequisites of CS115 and provides 4 credit hours.",
+        "source": "dept_of_Computer_Science_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "What is the history of the Sterling Academic Library at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Sterling Academic Library is located at the Main Quad, Central Campus, and was established in 1964. It has a total seating capacity of 640 and holds a collection of 242,000 books, 7,500 physical journals, 12,400 digital journals, and the Cendara Historical Manuscript Collection dating back to the founding of the region.",
+        "source": "infrastructure.md"
+      }
+    ]
+  },
+  {
+    "query": "What facilities does the Marlow Aquatic Center offer?",
+    "supporting_facts": [
+      {
+        "text": "The Marlow Aquatic Center, located on South Campus beside the Wellness Pavilion, features an Olympic-size swimming pool, a diving pool, a 100-seat spectator gallery, and hydrotherapy tanks. It is associated with the University Swim Team, Recreational Swimming Club, and the Lifeguard Training Program.",
+        "source": "infrastructure.md"
+      }
+    ]
+  },
+  {
+    "query": "How does the Law & Social Science Library differ from the Science & Engineering Resource Center?",
+    "supporting_facts": [
+      {
+        "text": "The Law & Social Science Library is located in the East Hall, focusing on legal texts, case law databases, and social policy archives, with facilities like a Moot Court Practice Room. The Science & Engineering Resource Center on Innovation Drive offers technical manuals, STEM research journals, a Computer Modeling Lab, and MakerSpace access.",
+        "source": "infrastructure.md"
+      }
+    ]
+  },
+  {
+    "query": "How can I participate in the “Mindful Mornings” program at Horizon Wellness Pavilion?",
+    "supporting_facts": [
+      {
+        "text": "The “Mindful Mornings” guided meditation series occurs every Tuesday and Thursday at the Horizon Wellness Pavilion on Lotus Lane, Central Campus. Participants can join by attending the sessions directly or by inquiring at the Pavilion for more information on registration and participation.",
+        "source": "infrastructure.md"
+      }
+    ]
+  },
+  {
+    "query": "Why might a student choose to use the Wellness & Accessibility Garden at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "The Wellness & Accessibility Garden near Sterling Academic Library offers sensory gardens with wheelchair-accessible paths, quiet reflection benches, and a mindfulness labyrinth. These features provide a peaceful environment, promoting relaxation, accessibility, and an opportunity to engage in guided walking groups during spring and autumn.",
+        "source": "infrastructure.md"
+      }
+    ]
+  },
+  {
+    "query": "What departments are in the School of Arts & Humanities at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "The School of Arts & Humanities at Cendara University includes the Department of English and Comparative Literature, Department of History, Department of Philosophy, and Department of Modern Languages.",
+        "source": "faculty_directory.md"
+      }
+    ]
+  },
+  {
+    "query": "Who is the Department Chair of Computer Science at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Dr. Uma Raghavan is the Professor & Department Chair of the Computer Science department at Cendara University.",
+        "source": "faculty_directory.md"
+      }
+    ]
+  },
+  {
+    "query": "How does the faculty directory of the School of Sciences differ from the School of Engineering & Technology at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "The School of Sciences includes the departments: Biology, Chemistry, Physics, and Mathematics and Statistics.",
+        "source": "faculty_directory.md"
+      },
+      {
+        "text": "The School of Engineering & Technology includes the departments: Computer Science, Mechanical Engineering, Electrical Engineering, and Civil and Environmental Engineering.",
+        "source": "faculty_directory.md"
+      }
+    ]
+  },
+  {
+    "query": "Does Cendara University have a Department of Nursing?",
+    "supporting_facts": [
+      {
+        "text": "Yes, Cendara University has a Department of Nursing under the School of Health Sciences.",
+        "source": "faculty_directory.md"
+      }
+    ]
+  },
+  {
+    "query": "What might be the significance of having a diverse range of departments at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Having a diverse range of departments allows Cendara University to offer a comprehensive and multidisciplinary education, catering to the varied interests and career goals of students. It facilitates interdisciplinary research and collaboration among faculty and students.",
+        "source": "faculty_directory.md"
+      }
+    ]
+  },
+  {
+    "query": "What are the specialized programs offered at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Specialized Programs at Cendara University include the Honors College, Sustainable Technology Initiative, International Business Concentration, Undergraduate Research Scholars Program, Global Education Exchange, Teacher Residency Program, Health Informatics Certification, and Environmental Policy Minor.",
+        "source": "program_catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "Can you describe the academic structure of Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University offers a comprehensive range of programs through its various schools and departments. These include the School of Arts & Humanities, School of Sciences, School of Engineering & Technology, School of Social Sciences, School of Business, School of Education, and School of Health Sciences. Each school comprises several specialized departments.",
+        "source": "program_catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "How does the School of Sciences differ from the School of Engineering & Technology at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "The School of Sciences at Cendara University includes departments like Biology, Chemistry, Physics, and Mathematics and Statistics, focusing on pure and applied sciences. In contrast, the School of Engineering & Technology encompasses departments such as Computer Science, Mechanical Engineering, Electrical Engineering, and Civil and Environmental Engineering, focusing on applied technology and engineering disciplines.",
+        "source": "program_catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "Why might a student choose to pursue a B.A. in Psychology at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "A student might choose a B.A. in Psychology at Cendara University due to the diverse areas of study offered, such as Clinical, Developmental, Cognitive, and Social Psychology. The program is likely appealing for its comprehensive curriculum and opportunities for advanced study and research, including M.Sc. and Ph.D. tracks.",
+        "source": "program_catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "What is the 2024–2025 course catalog for the Department of English and Comparative Literature?",
+    "supporting_facts": [
+      {
+        "text": "The Cendara University Department of English and Comparative Literature offers a range of undergraduate and graduate courses for the 2024–2025 academic year, including foundational courses like ENGL 101: Introduction to Literature, and advanced options like ENGL 550: Critical Theory.",
+        "source": "dept_of_English_and_Comp_Litreature_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "How do I enroll in an Honors Thesis course?",
+    "supporting_facts": [
+      {
+        "text": "To enroll in ENGL 498: Honors Thesis, students need an invitation to the Honors Program and must have completed ENGL 340. The course involves individualized research and thesis writing under faculty supervision.",
+        "source": "dept_of_English_and_Comp_Litreature_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "Is there a prerequisite for ENGL 203: British Literature I?",
+    "supporting_facts": [
+      {
+        "text": "Yes, ENGL 203: British Literature I requires the completion of ENGL 101 as a prerequisite.",
+        "source": "dept_of_English_and_Comp_Litreature_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "How does ENGL 212 differ from ENGL 211 in terms of content?",
+    "supporting_facts": [
+      {
+        "text": "ENGL 211: American Literature to 1865 focuses on major works and authors from colonization through the Civil War, while ENGL 212: American Literature Since 1865 examines representative American literary works from the late 19th century to the present, emphasizing different literary movements.",
+        "source": "dept_of_English_and_Comp_Litreature_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "When is ENGL 451: Senior Seminar in English typically taken?",
+    "supporting_facts": [
+      {
+        "text": "ENGL 451: Senior Seminar in English is a capstone course meant for senior English majors, indicating it is generally taken towards the end of the undergraduate program. It requires senior standing and completion of at least two 300-level ENGL courses.",
+        "source": "dept_of_English_and_Comp_Litreature_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "How do I apply for financial aid at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "To receive financial aid, applicants must complete the appropriate forms and follow these steps: Gather required documents, complete applications, submit supplemental materials, meet all deadlines, review aid offer, and maintain eligibility.",
+        "source": "financial_aid.md"
+      },
+      {
+        "text": "Applicants must submit the FAFSA or CSS Profile, depending on their eligibility, through the provided links, with priority deadlines and additional department-specific requirements detailed in the guide.",
+        "source": "financial_aid.md"
+      }
+    ]
+  },
+  {
+    "query": "How do scholarships differ from grants at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Scholarships are merit-based, talent-based, and need-based awards that do not require repayment. They can be automatic or application-based and are available for students across various eligibility criteria.",
+        "source": "financial_aid.md"
+      },
+      {
+        "text": "Grants are need-based aid, typically from university, state, or federal sources, and also do not require repayment. The eligibility and award amounts for grants depend on financial need and are reviewed annually.",
+        "source": "financial_aid.md"
+      }
+    ]
+  },
+  {
+    "query": "What are the work-study opportunities at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Cendara’s Federal and Institutional Work-Study programs provide part-time, on-campus jobs to assist students in meeting expenses. Typical positions include library assistant, lab tech, campus events, dining hall, and research aide.",
+        "source": "financial_aid.md"
+      },
+      {
+        "text": "The hourly pay ranges from $12 to $18, depending on the undergraduate or graduate status, with a maximum of 15 hours per week during terms.",
+        "source": "financial_aid.md"
+      }
+    ]
+  },
+  {
+    "query": "What types of loans are available for students at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "Federal Student Loans for U.S. citizens include Direct Subsidized, Direct Unsubsidized, Grad PLUS, and Parent PLUS Loans with varying limits and interest rates. Institutional Loan Programs like Cendara Opportunity Loan and Short-term Emergency Loan are also available.",
+        "source": "financial_aid.md"
+      },
+      {
+        "text": "Each loan has specific conditions, such as need-based requirements, interest rates, and credit checks, with loan counseling required for new borrowers.",
+        "source": "financial_aid.md"
+      }
+    ]
+  },
+  {
+    "query": "What awards did Cendara University receive for sustainability and inclusion in 2023?",
+    "supporting_facts": [
+      {
+        "text": "Cendara University received the Innovative Campus Sustainability Program Award from the Green Futures Alliance for the “Solar Steps” energy overhaul, and the Excellence in Diversity and Inclusion (Gold Level) from the National Association for Inclusive Education for the “Bridge Horizons” initiative.",
+        "source": "awards_and_recognition.md"
+      }
+    ]
+  },
+  {
+    "query": "Who received the Chancellor’s Award for Excellence in Teaching in 2024?",
+    "supporting_facts": [
+      {
+        "text": "Dr. Simone L. Marquez received the Chancellor’s Award for Excellence in Teaching in 2024 for her distinguished teaching and innovative curriculum development in applied mathematics.",
+        "source": "awards_and_recognition.md"
+      }
+    ]
+  },
+  {
+    "query": "When was the Distinguished Alumni Achievement Award presented to Dr. Priyanka Halson?",
+    "supporting_facts": [
+      {
+        "text": "The Distinguished Alumni Achievement Award was presented to Dr. Priyanka Halson on March 15, 2024.",
+        "source": "awards_and_recognition.md"
+      }
+    ]
+  },
+  {
+    "query": "Why was Dr. Priyanka Halson recognized with the Distinguished Alumni Achievement Award?",
+    "supporting_facts": [
+      {
+        "text": "Dr. Priyanka Halson was recognized with the Distinguished Alumni Achievement Award for pioneering advancements in heart disease diagnostics and her commitment to global health advocacy, exemplifying Cendara values.",
+        "source": "awards_and_recognition.md"
+      }
+    ]
+  },
+  {
+    "query": "How does the award received by the Cendara Debate Society differ from the award won by Elena DiLuca?",
+    "supporting_facts": [
+      {
+        "text": "The Cendara Debate Society won the Intercollegiate Ethics Bowl, triumphing over nine regional universities in March 2024. Elena DiLuca won First Place at the National Short Film Festival for her original screenplay in November 2023.",
+        "source": "awards_and_recognition.md"
+      }
+    ]
+  },
+  {
+    "query": "What courses are offered in the first year of the B.N.S. program at Cendara University?",
+    "supporting_facts": [
+      {
+        "text": "The first-year courses in the B.N.S. program include: NURS 101: Foundations of Professional Nursing, NURS 111: Human Anatomy & Physiology I, NURS 112: Human Anatomy & Physiology II, NURS 120: Health Assessment, and NURS 130: Introduction to Clinical Practice.",
+        "source": "dept_of_Nursing_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "How does NURS 221 differ from NURS 220 in the Nursing program?",
+    "supporting_facts": [
+      {
+        "text": "NURS 220: Medical-Surgical Nursing I focuses on common medical and surgical health problems with emphasis on assessment and intervention. NURS 221: Medical-Surgical Nursing II builds on NURS 220 by addressing complex health conditions and advanced intervention techniques.",
+        "source": "dept_of_Nursing_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "What is the primary focus of the NURS 340: Community Health Nursing course?",
+    "supporting_facts": [
+      {
+        "text": "NURS 340: Community Health Nursing prepares students to employ health promotion and disease prevention strategies, conduct assessments, and plan interventions in community settings.",
+        "source": "dept_of_Nursing_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "What are the prerequisites for the NURS 420: Advanced Clinical Practicum?",
+    "supporting_facts": [
+      {
+        "text": "The prerequisites for NURS 420 include NURS 221 and the completion of all previous clinical courses.",
+        "source": "dept_of_Nursing_Catalog.md"
+      }
+    ]
+  },
+  {
+    "query": "Why is the NURS 440: Capstone Seminar vital for nursing students?",
+    "supporting_facts": [
+      {
+        "text": "The NURS 440: Capstone Seminar integrates learning from all previous coursework and clinical experiences, preparing students for the national licensure exam (NCLEX-RN) and transition to professional practice.",
+        "source": "dept_of_Nursing_Catalog.md"
+      }
+    ]
+  }
+]
