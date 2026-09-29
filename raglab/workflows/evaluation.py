@@ -1,5 +1,7 @@
 from pathlib import Path
 
+from dotenv import load_dotenv
+
 from raglab.application.models import EvaluationRunSummary
 from raglab.composition.evaluation import build_evaluation_experiment
 
@@ -10,6 +12,8 @@ def run_evaluation(
     retry_failed: bool = False,
 ) -> EvaluationRunSummary:
     """Run retrieval evaluation with checkpoint and resume support."""
+
+    load_dotenv(project_root.resolve() / ".env")
 
     experiment = build_evaluation_experiment(
         config_path=config_path,
