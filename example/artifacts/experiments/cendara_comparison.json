@@ -1,0 +1,27 @@
+{
+  "queries_total": 187,
+  "paired_queries": 186,
+  "excluded_query_indices": [
+    116
+  ],
+  "retrievers": {
+    "BM25S": {
+      "successful_queries": 186,
+      "judge_failures": 1,
+      "paired_metrics": {
+        "recall@1": 0.45161290322580644,
+        "recall@5": 0.7768817204301075,
+        "mrr": 0.5959677419354839
+      }
+    },
+    "BGE-M3": {
+      "successful_queries": 186,
+      "judge_failures": 1,
+      "paired_metrics": {
+        "recall@1": 0.6541218637992832,
+        "recall@5": 0.8763440860215054,
+        "mrr": 0.7775089605734767
+      }
+    }
+  }
+}
