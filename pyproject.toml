@@ -1,0 +1,90 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "raglab"
+version = "0.1.0"
+description = "Modular RAG experimentation framework for retrieval, generation, and evaluation."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "bm25s>=0.2,<1",
+    "langchain-core>=1,<2",
+    "langchain-chroma>=1,<2",
+    "langchain-huggingface>=1,<2",
+    "langchain-gigachat>=0.5.1,<0.6",
+    "pydantic>=2,<3",
+    "python-dotenv>=1,<2",
+    "PyYAML>=6,<7",
+    "typer>=0.15,<1",
+    "rich>=13,<15",
+]
+
+[project.scripts]
+raglab = "raglab.presentation.cli.main:app"
+
+
+[project.optional-dependencies]
+example = [
+    "matplotlib>=3.8",
+]
+
+dev = [
+    "mypy>=2,<3",
+    "pytest>=9,<10",
+    "ruff>=0.11,<1",
+    "types-PyYAML>=6,<7",
+]
+
+
+[tool.setuptools.packages.find]
+include = ["raglab*"]
+
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra -q"
+
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_unused_configs = true
+files = [
+    "raglab",
+    "tests",
+]
+# LangChain has a large type dependency graph that makes mypy very slow
+# Skip analyzing its internals; the RAGLab integration is covered by adapter tests
+[[tool.mypy.overrides]]
+module = [
+    "langchain_core.*",
+    "langchain_huggingface",
+    "langchain_chroma",
+]
+follow_imports = "skip"
+
+[[tool.mypy.overrides]]
+module = ["bm25s", "bm25s.*"]
+ignore_missing_imports = true
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+
+
+[tool.ruff.lint]
+select = [
+    "E", # pycodestyle errors
+    "F", # Pyflakes
+    "I", # import sorting
+    "B", # flake8-bugbear
+    "UP", # pyupgrade
+]
+
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
