@@ -1,5 +1,7 @@
 from pathlib import Path
 
+from dotenv import load_dotenv
+
 from raglab.application.rag_service import RagService
 from raglab.composition.config.loader import load_production_config
 from raglab.composition.generators import build_generator
@@ -12,6 +14,7 @@ def run_ask(
     query: str,
 ) -> str:
     """Generate an answer using the production configuration"""
+    load_dotenv(project_root.resolve() / ".env")
 
     # 1. Load the production configuration
     config = load_production_config(
